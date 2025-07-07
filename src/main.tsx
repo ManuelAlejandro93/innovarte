@@ -1,10 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { InnovartePage } from './InnovartePage';
 
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <h1 className='text-6xl text-green-400'>Titulo de prueba.</h1>
+    <InnovartePage></InnovartePage>
   </StrictMode>
 );
