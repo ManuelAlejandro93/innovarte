@@ -1,9 +1,11 @@
-import { AppContainer, SectionContainer } from './Components';
+import { GrandContainer, SectionContainer } from './Components';
 
 export const InnovartePage = () => {
   return (
-    <AppContainer>
-      <></>
-    </AppContainer>
+    <GrandContainer>
+      <SectionContainer>
+        <h1>Seccion 1.</h1>
+      </SectionContainer>
+    </GrandContainer>
   );
 };

@@ -1,3 +1,5 @@
-export const SectionContainer = () => {
-  return <div className='py-80'>SectionContainer</div>;
+import { ChildrenProp } from '@/Interfaces';
+
+export const SectionContainer = ({ children }: ChildrenProp) => {
+  return <div className='py-12'>{children}</div>;
 };
