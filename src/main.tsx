@@ -1,11 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { PokeApp } from './PokeApp';
 
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <PokeApp />
+    <h1 className='text-6xl text-green-400'>Titulo de prueba.</h1>
   </StrictMode>
 );
