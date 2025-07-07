@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { InnovartePage } from './InnovartePage';
+import { InnovarteApp } from './InnovarteApp';
 
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <InnovartePage></InnovartePage>
+    <InnovarteApp></InnovarteApp>
   </StrictMode>
 );
