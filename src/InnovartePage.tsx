@@ -1,5 +1,9 @@
-import { AppContainer } from './Components';
+import { AppContainer, SectionContainer } from './Components';
 
 export const InnovartePage = () => {
-  return <AppContainer></AppContainer>;
+  return (
+    <AppContainer>
+      <></>
+    </AppContainer>
+  );
 };
