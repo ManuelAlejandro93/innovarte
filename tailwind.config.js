@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-import * as appColors from './src/UI';
+import * as appColors from './src/UI/Colors';
 
 export default {
   darkMode: ['class'],
