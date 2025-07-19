@@ -47,7 +47,7 @@ export const Navbar = () => {
         </a>
         <a
           href=''
-          className='py-4 px-8 bg-app-orange-50 text-app-white-95 rounded-md'
+          className='py-4 px-8 bg-app-orange-50 text-app-white-95 rounded-md '
         >
           Login
         </a>
