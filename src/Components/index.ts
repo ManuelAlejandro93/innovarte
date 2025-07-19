@@ -1,4 +1,2 @@
-export * from './GrandContainer';
-export * from './SingleSectionContainer';
-export * from './AppContainer';
-export * from './SectionContainer';
+export * from './Containers';
+export * from './Header';
