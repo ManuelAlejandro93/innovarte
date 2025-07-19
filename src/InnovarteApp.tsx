@@ -2,7 +2,8 @@ import {
   GrandContainer,
   SingleSectionContainer,
   AppContainer,
-  SectionContainer
+  SectionContainer,
+  Header
 } from './Components';
 
 import { PhoneIcon } from '@heroicons/react/24/solid';
@@ -10,7 +11,7 @@ export const InnovarteApp = () => {
   return (
     <AppContainer>
       <GrandContainer>
-        <h1 className='bg-red-200'>titulo de header</h1>
+        <Header />
         <SectionContainer>
           <SingleSectionContainer>
             <h1 className='font-regular'>Example Words</h1>

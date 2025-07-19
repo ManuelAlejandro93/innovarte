@@ -1,1 +1,9 @@
-export const header = 0;
+import { TopBanner } from './TopBanner';
+
+export const Header = () => {
+  return (
+    <header>
+      <TopBanner></TopBanner>
+    </header>
+  );
+};
