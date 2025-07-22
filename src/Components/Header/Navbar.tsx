@@ -1,3 +1,5 @@
+import { HambMenu } from '@/Components';
+
 export const Navbar = () => {
   return (
     <nav className='navbar grid grid-cols-2 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2'>
@@ -38,19 +40,20 @@ export const Navbar = () => {
           Contact
         </a>
       </div>
-      <div className='flex justify-end'>
+      <div className='flex justify-between'>
         <a
           href=''
-          className='p-4 md:p-2 lg:p-2 xl:p-4'
+          className='p-2 md:p-2 lg:p-2 xl:p-4'
         >
           Sign Up
         </a>
         <a
           href=''
-          className='bg-app-orange-50 text-app-white-95 rounded-md p-4 md:p-2 lg:p-2 xl:py-4 xl:px-8'
+          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8'
         >
           Login
         </a>
+        <HambMenu />
       </div>
     </nav>
   );
