@@ -2,7 +2,8 @@ import {
   GrandContainer,
   AppContainer,
   Header,
-  SectionContainer
+  SectionContainer,
+  Hero
 } from './Components';
 
 export const InnovarteApp = () => {
@@ -11,7 +12,10 @@ export const InnovarteApp = () => {
       <GrandContainer>
         <Header />
         <SectionContainer>
-          <></>
+          <Hero></Hero>
+          <Hero></Hero>
+          <Hero></Hero>
+          <Hero></Hero>
         </SectionContainer>
       </GrandContainer>
     </AppContainer>
