@@ -4,22 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AppsIcon from '@mui/icons-material/Apps';
 import { useState } from 'react';
 
-const options = [
-  'None',
-  'Atria',
-  'Callisto',
-  'Dione',
-  'Ganymede',
-  'Hangouts Call',
-  'Luna',
-  'Oberon',
-  'Phobos',
-  'Pyxis',
-  'Sedna',
-  'Titania',
-  'Triton',
-  'Umbriel'
-];
+const options = ['Home', 'Courses', 'About Us', 'Pricing', 'Contact'];
 
 const ITEM_HEIGHT = 48;
 
@@ -54,7 +39,7 @@ export const HambMenu = () => {
           paper: {
             style: {
               maxHeight: ITEM_HEIGHT * 4.5,
-              width: '20ch'
+              width: '40ch'
             }
           },
           list: {
