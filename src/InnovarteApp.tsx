@@ -16,12 +16,6 @@ export const InnovarteApp = () => {
           <SingleSectionContainer>
             <Hero></Hero>
           </SingleSectionContainer>
-          <SingleSectionContainer>
-            <Hero></Hero>
-          </SingleSectionContainer>
-          <SingleSectionContainer>
-            <Hero></Hero>
-          </SingleSectionContainer>
         </SectionContainer>
       </GrandContainer>
     </AppContainer>
