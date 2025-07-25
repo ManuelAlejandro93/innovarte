@@ -1,4 +1,3 @@
-//cambios antes de introducir en nuevo hero section
 export const Hero = () => {
   return (
     <div className='pt-16 space-y-10'>
