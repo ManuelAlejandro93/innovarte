@@ -1,12 +1,24 @@
 //cambios antes de introducir en nuevo hero section
 export const Hero = () => {
   return (
-    <div className='grid pt-16 space-y-10'>
-      <div className='row1 text-center'>
-        <h2 className='text-5xl font-bold text-app-grey-15'>
-          <span className='text-app-orange-50'>Unlock</span> Your Creative
-          Potential
-        </h2>
+    <div className='pt-16 space-y-10'>
+      <div className='row1'>
+        <div className='flex justify-center'>
+          <img
+            className='mr-4'
+            src='/Icons/flash-icon.png'
+            alt='logo-image'
+          />
+          <h2 className='text-5xl font-bold text-app-grey-15'>
+            <span className='text-app-orange-50'>Unlock</span> Your Creative
+            Potential
+          </h2>
+          <img
+            className='rotate-90 relative bottom-6'
+            src='/Icons/abstract-lines.png'
+            alt='logo-image'
+          />
+        </div>
       </div>
       <div className='row2 grid space-y-2'>
         <p className='text-center text-4xl text-app-grey-15 font-medium'>
