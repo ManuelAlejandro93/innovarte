@@ -1,13 +1,9 @@
+//cambios antes de introducir en nuevo hero section
 export const Hero = () => {
   return (
     <div className='grid pt-16 space-y-10'>
       <div className='row1 text-center'>
         <h2 className='text-5xl font-bold text-app-grey-15'>
-          <img
-            className='relative'
-            src='/Icons/abstract-lines.png'
-            alt='abstract-lines'
-          />
           <span className='text-app-orange-50'>Unlock</span> Your Creative
           Potential
         </h2>
