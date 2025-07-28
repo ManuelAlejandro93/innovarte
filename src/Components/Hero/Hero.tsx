@@ -8,7 +8,7 @@ export const Hero = () => {
             src='/Icons/flash-icon.png'
             alt='logo-image'
           />
-          <h2 className='text-5xl font-bold text-app-grey-15'>
+          <h2 className='md:text-3xl lg:text-5xl font-bold text-app-grey-15'>
             <span className='text-app-orange-50'>Unlock</span> Your Creative
             Potential
           </h2>
@@ -20,23 +20,23 @@ export const Hero = () => {
         </div>
       </div>
       <div className='row2 grid space-y-2'>
-        <p className='text-center text-4xl text-app-grey-15 font-medium'>
+        <p className='text-center md:text-2xl lg:text-4xl text-app-grey-15 font-medium'>
           with Online Desing and Development Courses
         </p>
-        <p className='text-center text-lg'>
+        <p className='text-center lg:text-lg'>
           learn from industry expert and enhace your skills
         </p>
       </div>
-      <div className='row3 flex justify-center'>
+      <div className='row3 md:text-center md:grid md:grid-cols-2 lg:flex lg:justify-center'>
         <a
           href=''
-          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2 text-xl'
+          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2 lg:text-xl'
         >
           Explore
         </a>
         <a
           href=''
-          className='rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white text-xl'
+          className='rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white lg:text-xl'
         >
           View Pricing
         </a>
