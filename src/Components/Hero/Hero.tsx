@@ -4,7 +4,7 @@ export const Hero = () => {
       <div className='row1'>
         <div className='flex justify-center items-center'>
           <img
-            className='mr-4'
+            className='mr-2 md:mr-4 w-6 h-auto md:w-10'
             src='/Icons/flash-icon.png'
             alt='logo-image'
           />
