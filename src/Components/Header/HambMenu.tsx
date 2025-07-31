@@ -1,7 +1,7 @@
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import AppsIcon from '@mui/icons-material/Apps';
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import { useState } from 'react';
 
 const options = ['Home', 'Courses', 'About Us', 'Pricing', 'Contact'];
@@ -28,7 +28,7 @@ export const HambMenu = () => {
         aria-haspopup='true'
         onClick={handleClick}
       >
-        <AppsIcon sx={{ width: 20, height: 'auto' }} />
+        <DensityMediumIcon sx={{ width: 20, height: 'auto' }} />
       </IconButton>
       <Menu
         id='long-menu'
