@@ -6,16 +6,16 @@ export const Hero = () => {
       <div className='row1'>
         <div className='flex justify-center items-center'>
           <img
-            className='mr-2 md:mr-4 w-6 h-auto md:w-10'
+            className={`${imgSizes} mr-2`}
             src='/Icons/flash-icon.png'
             alt='logo-image'
           />
-          <h2 className={`${fontsizes.titles}  font-bold text-app-grey-15`}>
+          <h2 className={`${fontsizes.titles} font-bold text-app-grey-15`}>
             <span className='text-app-orange-50'>Unlock</span> Your Creative
             Potential
           </h2>
           <img
-            className={`${imgSizes} md:w-10 rotate-90 relative bottom-6`}
+            className={`${imgSizes} rotate-90 relative bottom-4 lg:bottom-7`}
             src='/Icons/abstract-lines.png'
             alt='logo-image'
           />
