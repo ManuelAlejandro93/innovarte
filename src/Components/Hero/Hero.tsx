@@ -23,7 +23,7 @@ export const Hero = () => {
         <p className='text-center text-sm md:text-center md:text-2xl lg:text-4xl text-app-grey-15 font-medium'>
           with Online Desing and Development Courses
         </p>
-        <p className='text-center text-xs lg:text-lg'>
+        <p className='text-center text-xs md:text-sm lg:text-lg'>
           learn from industry expert and enhace your skills
         </p>
       </div>
