@@ -12,8 +12,3 @@ export const fontsizes = {
   cardTitles,
   general
 };
-
-//componente de prueba --- borrar.
-const FontSizes = () => {
-  return <div className='text-'>FontSizes</div>;
-};

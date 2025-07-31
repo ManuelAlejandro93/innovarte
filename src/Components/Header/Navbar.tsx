@@ -1,5 +1,5 @@
 import { HambMenu } from '@/Components';
-import { fontsizes } from '@/Standars';
+import { fontsizes, imgSizes } from '@/Standars';
 
 export const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ export const Navbar = () => {
         <img
           src='Logos/Logo-desktop.png'
           alt='company-logo'
-          className='w-12 md:w-8 md:h-auto lg:w-10 lg:h-auto xl:w-14 xl:h-auto'
+          className={`${imgSizes}`}
         />
         <a
           href=''

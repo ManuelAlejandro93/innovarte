@@ -1,4 +1,4 @@
-import { fontsizes } from '@/Standars';
+import { fontsizes, imgSizes } from '@/Standars';
 
 export const Hero = () => {
   return (
@@ -15,7 +15,7 @@ export const Hero = () => {
             Potential
           </h2>
           <img
-            className='w-6 h-auto md:w-10 rotate-90 relative bottom-6'
+            className={`${imgSizes} md:w-10 rotate-90 relative bottom-6`}
             src='/Icons/abstract-lines.png'
             alt='logo-image'
           />
