@@ -43,16 +43,16 @@ export const Navbar = () => {
           Contact
         </a>
       </div>
-      <div className='flex justify-between'>
+      <div className='flex justify-end'>
         <a
           href=''
-          className='p-2 md:p-2 lg:p-2 xl:p-4'
+          className='text-center p-2 lg:p-2 xl:p-4'
         >
           Sign Up
         </a>
         <a
           href=''
-          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8'
+          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 lg:p-2 xl:py-4 xl:px-8'
         >
           Login
         </a>

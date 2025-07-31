@@ -19,7 +19,7 @@ export const HambMenu = () => {
   };
 
   return (
-    <div className='sm:hidden'>
+    <div className={'sm:hidden'}>
       <IconButton
         aria-label='more'
         id='long-button'
@@ -28,7 +28,7 @@ export const HambMenu = () => {
         aria-haspopup='true'
         onClick={handleClick}
       >
-        <AppsIcon sx={{ width: 30, height: 'auto' }} />
+        <AppsIcon sx={{ width: 20, height: 'auto' }} />
       </IconButton>
       <Menu
         id='long-menu'
