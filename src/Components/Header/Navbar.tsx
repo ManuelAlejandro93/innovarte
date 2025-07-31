@@ -1,8 +1,11 @@
 import { HambMenu } from '@/Components';
+import { fontsizes } from '@/Standars';
 
 export const Navbar = () => {
   return (
-    <nav className='navbar grid grid-cols-2 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2'>
+    <nav
+      className={`navbar grid grid-cols-2 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2 ${fontsizes.general}`}
+    >
       <div className='section-routes flex items-center md:justify-between lg:justify-between'>
         <img
           src='Logos/Logo-desktop.png'

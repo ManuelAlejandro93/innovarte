@@ -14,6 +14,6 @@ export const fontsizes = {
 };
 
 //componente de prueba --- borrar.
-export const FontSizes = () => {
+const FontSizes = () => {
   return <div className='text-'>FontSizes</div>;
 };
