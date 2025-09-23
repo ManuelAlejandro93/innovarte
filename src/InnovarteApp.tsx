@@ -4,7 +4,8 @@ import {
   Header,
   SectionContainer,
   SingleSectionContainer,
-  Hero
+  Hero,
+  CompTesting
 } from './Components';
 
 export const InnovarteApp = () => {
@@ -16,6 +17,11 @@ export const InnovarteApp = () => {
           <SingleSectionContainer>
             <Hero></Hero>
           </SingleSectionContainer>
+          {/* //? Componente de Testing. */}
+          <SingleSectionContainer>
+            <CompTesting></CompTesting>
+          </SingleSectionContainer>
+          {/* //? Componente de Testing. */}
         </SectionContainer>
       </GrandContainer>
     </AppContainer>
