@@ -1,9 +1,10 @@
-import { ViewAllButton } from '@/Components';
+import { ViewAllReadFullButton } from '@/Components';
 export const CompTesting = () => {
   return (
     <div>
       <span className='text-red-400'>Testing Component</span>
-      <ViewAllButton></ViewAllButton>
+      <ViewAllReadFullButton isViewAllButton></ViewAllReadFullButton>
+      <ViewAllReadFullButton isViewAllButton={false}></ViewAllReadFullButton>
     </div>
   );
 };
