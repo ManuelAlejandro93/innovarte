@@ -3,18 +3,20 @@ import { grey_15 } from '@/UI';
 import { ReactNode } from 'react';
 
 interface ViewAllReadAllButton {
-  isViewAllButton: boolean;
+  className?: String;
+  text: String;
 }
 
-export const ViewAllReadFullButton = ({
-  isViewAllButton
+export const AppButton = ({
+  className,
+  text
 }: ViewAllReadAllButton): ReactNode => {
   return (
     <a
       href='#'
-      className={`bg-app-white-95 ${fontsizes.general} text-${grey_15} rounded-lg p-4`}
+      className={`bg-app-white-95 ${fontsizes.general} text-${grey_15} rounded-lg p-4 ${className}`}
     >
-      {isViewAllButton ? 'View All' : 'Read Full Story'}
+      {text}
     </a>
   );
 };
