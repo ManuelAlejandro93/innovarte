@@ -13,31 +13,31 @@ export const Navbar = () => {
           className={`${imgSizes}`}
         />
         <a
-          href=''
+          href='#'
           className='bg-app-white-95 rounded-lg hidden md:block md:py-2 md:px-0 lg:py-2 lg:px-1 xl:p-4'
         >
           Home
         </a>
         <a
-          href=''
+          href='#'
           className='hidden md:block md:py-2 lg:p-2 xl:p-4'
         >
           Courses
         </a>
         <a
-          href=''
+          href='#'
           className='hidden md:block md:py-2 lg:p-2 xl:p-4'
         >
           About us
         </a>
         <a
-          href=''
+          href='#'
           className='hidden md:block md:py-2 lg:p-2 xl:p-4'
         >
           Pricing
         </a>
         <a
-          href=''
+          href='#'
           className='hidden md:block md:py-2 lg:p-2 xl:p-4'
         >
           Contact
@@ -45,13 +45,13 @@ export const Navbar = () => {
       </div>
       <div className='flex justify-end'>
         <a
-          href=''
+          href='#'
           className='text-center p-2 lg:p-2 xl:p-4'
         >
           Sign Up
         </a>
         <a
-          href=''
+          href='#'
           className='bg-app-orange-50 text-app-white-95 rounded-md p-2 lg:p-2 xl:py-4 xl:px-8'
         >
           Login

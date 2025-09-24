@@ -11,7 +11,7 @@ export const ViewAllReadFullButton = ({
 }: ViewAllReadAllButton): ReactNode => {
   return (
     <a
-      href=''
+      href='#'
       className={`bg-app-white-95 ${fontsizes.general} text-${grey_15} rounded-lg p-4`}
     >
       {isViewAllButton ? 'View All' : 'Read Full Story'}
