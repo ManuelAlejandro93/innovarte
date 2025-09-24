@@ -1,9 +1,9 @@
-import { AppButton } from '@/Components';
+import { SingleSectionHeader } from '@/Components';
 export const CompTesting = () => {
   return (
     <div>
-      <span>Testing Component</span>
-      <AppButton text={'View All'}></AppButton>
+      <span className='text-red-500'>Testing Component</span>
+      <SingleSectionHeader></SingleSectionHeader>
     </div>
   );
 };

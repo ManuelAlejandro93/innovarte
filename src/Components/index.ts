@@ -6,3 +6,4 @@ export * from './Containers';
 export * from './Header';
 export * from './Hero';
 export * from './Buttons';
+export * from './SingleSectionHeader';
