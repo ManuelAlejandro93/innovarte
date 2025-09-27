@@ -14,7 +14,7 @@ export const AppButton = ({
   return (
     <a
       href='#'
-      className={`bg-app-white-95 ${fontsizes.general} text-${grey_15} rounded-lg p-4 ${className}`}
+      className={`bg-app-white-95 ${fontsizes.general} text-${grey_15} rounded-lg p-4 md:p-2 lg:p-4 ${className}`}
     >
       {text}
     </a>

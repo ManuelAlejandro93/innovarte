@@ -11,7 +11,7 @@ export const SingleSectionHeader = ({
       <h2 className={`${fontsizes.titles} text-app-grey-20 mb-1 font-semibold`}>
         {title ?? loremTitle}
       </h2>
-      <div className='grid space-y-4 sm:flex sm:flex-row sm:justify-between'>
+      <div className='grid space-y-4 md:flex md:flex-row md:justify-between'>
         <h3 className={`${fontsizes.general} text-app-grey-30 w-2/3`}>
           {subtitle ?? loremGeneral}
         </h3>
@@ -19,7 +19,7 @@ export const SingleSectionHeader = ({
           <AppButton text={'View All'}></AppButton>
         </span>
       </div>
-      <h3 className={`${fontsizes.general}`}>lorem espacio.</h3>
+      <div className={`${fontsizes.general} text-red-400 mt-8`} />
     </>
   );
 };
