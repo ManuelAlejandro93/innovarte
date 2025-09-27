@@ -7,7 +7,7 @@ export const SingleSectionHeader = ({
   subtitle
 }: SingleSectionHeaderInterface) => {
   return (
-    <div>
+    <>
       <h2 className={`${fontsizes.titles} text-app-grey-20 mb-1 font-semibold`}>
         {title ?? loremTitle}
       </h2>
@@ -19,7 +19,7 @@ export const SingleSectionHeader = ({
           <AppButton text={'View All'}></AppButton>
         </span>
       </div>
-      <h1>Espacio para el espacio</h1>
-    </div>
+      <h3 className={`${fontsizes.general}`}>lorem espacio.</h3>
+    </>
   );
 };
