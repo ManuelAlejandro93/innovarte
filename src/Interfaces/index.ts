@@ -1,2 +1,3 @@
-export * from './ChildrenProp';
-export * from './SingleSectionHeader';
+export * from './ChildrenPropInterface';
+export * from './SingleSectionHeaderInterface';
+export * from './SingleSectionInterface';

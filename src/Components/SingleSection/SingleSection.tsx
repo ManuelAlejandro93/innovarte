@@ -1,14 +1,18 @@
 import { SingleSectionHeader } from '@/Components';
-import { loremGeneral } from '@/Standars';
+import { SingleSectionInterface } from '@/Interfaces';
 
-export const SingleSection = () => {
+export const SingleSection = ({
+  children,
+  title,
+  subtitle
+}: SingleSectionInterface) => {
   return (
     <>
       <SingleSectionHeader
-        title={'Benefits'}
-        subtitle={loremGeneral}
-      ></SingleSectionHeader>
-      <h3>Cuerpo de la sección.</h3>
+        title={title}
+        subtitle={subtitle}
+      />
+      {children}
     </>
   );
 };
