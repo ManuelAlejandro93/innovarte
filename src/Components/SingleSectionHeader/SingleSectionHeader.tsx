@@ -1,10 +1,10 @@
-import { AppButton } from '@/Components';
 import { fontsizes, loremTitle, loremGeneral } from '@/Standars';
 import { SingleSectionHeaderInterface } from '@/Interfaces';
 
 export const SingleSectionHeader = ({
   title,
-  subtitle
+  subtitle,
+  viewAllButton
 }: SingleSectionHeaderInterface) => {
   return (
     <>
@@ -15,8 +15,8 @@ export const SingleSectionHeader = ({
         <h3 className={`${fontsizes.general} text-app-grey-30 w-2/3`}>
           {subtitle ?? loremGeneral}
         </h3>
-        <span className='sm:flex sm:flex-col sm:justify-end'>
-          <AppButton text={'View All'}></AppButton>
+        <span className='md:flex md:flex-col md:justify-end'>
+          {viewAllButton}
         </span>
       </div>
       <div className='mt-8 md:mt-6 lg:mt-8' />

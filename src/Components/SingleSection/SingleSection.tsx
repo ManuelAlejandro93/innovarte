@@ -4,13 +4,15 @@ import { SingleSectionInterface } from '@/Interfaces';
 export const SingleSection = ({
   children,
   title,
-  subtitle
+  subtitle,
+  viewAllButton
 }: SingleSectionInterface) => {
   return (
     <>
       <SingleSectionHeader
         title={title}
         subtitle={subtitle}
+        viewAllButton={viewAllButton}
       />
       {children}
     </>

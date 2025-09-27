@@ -1,4 +1,4 @@
-import { SingleSection } from '@/Components';
+import { AppButton, SingleSection } from '@/Components';
 import { loremGeneral } from '@/Standars';
 
 export const CompTesting = () => {
@@ -8,6 +8,7 @@ export const CompTesting = () => {
       <SingleSection
         title={'Benefits'}
         subtitle={loremGeneral}
+        viewAllButton={<AppButton text={'View All'} />}
       >
         <h3>Contenido de la sección.</h3>
       </SingleSection>
