@@ -19,7 +19,8 @@ export const SingleSectionHeader = ({
           <AppButton text={'View All'}></AppButton>
         </span>
       </div>
-      <div className={`${fontsizes.general} text-red-400 mt-8`} />
+      <div className='mt-8 md:mt-6 lg:mt-8' />
+      <h3 className={`${fontsizes.general}`}>Contenido Cualquiera...</h3>
     </>
   );
 };
