@@ -14,7 +14,7 @@ export const SingleSectionHeader = () => {
           quisquam, dolores fuga laborum perferendis officia similique ipsum
           voluptatem alias nulla architecto iste tempore.
         </h3>
-        <span>
+        <span className='sm:flex sm:flex-col sm:justify-end'>
           <AppButton text={'View All'}></AppButton>
         </span>
       </div>
