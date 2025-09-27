@@ -20,7 +20,6 @@ export const SingleSectionHeader = ({
         </span>
       </div>
       <div className='mt-8 md:mt-6 lg:mt-8' />
-      <h3 className={`${fontsizes.general}`}>Contenido Cualquiera...</h3>
     </>
   );
 };
