@@ -1,4 +1,5 @@
 import { fontsizes } from '@/Standars';
+import { Bolt } from '@/Icons';
 
 export const BenefitCard = () => {
   return (
@@ -9,10 +10,12 @@ export const BenefitCard = () => {
         01
       </h3>
       <div className={`flex flex-col justify-around ${fontsizes.general}`}>
-        <p className='bg-slate-200'>lorem 1</p>
-        <p className='bg-slate-200'>lorem 2</p>
+        <p className={`text-app-grey-20 font-semibold ${fontsizes.cardTitles}`}>
+          Flexible Learing Schedule
+        </p>
+        <p className={`text-app-grey-30 ${fontsizes.general}`}>lorem 2</p>
       </div>
-      <h3 className='bg-red-200 text-right'>BenefitBottomDiv</h3>
+      <Bolt className='size-8' />
     </div>
   );
 };
