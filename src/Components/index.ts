@@ -8,3 +8,5 @@ export * from './Hero';
 export * from './Buttons';
 export * from './SingleSectionHeader';
 export * from './SingleSection';
+
+export * from './Cards';
