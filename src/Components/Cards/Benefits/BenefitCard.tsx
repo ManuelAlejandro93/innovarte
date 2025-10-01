@@ -3,7 +3,7 @@ import { Bolt } from '@/Icons';
 
 export const BenefitCard = () => {
   return (
-    <div className='bg-app-white-90 rounded-md w-80 h-80 p-10 md:p-8 grid grid-cols-1 space-y-2 md:space-y-8 lg:space-y-4'>
+    <div className='bg-app-white-90 rounded-2xl md:w-45 md:h-45 lg:w-80 lg:h-80 p-10 md:p-8 grid grid-cols-1 space-y-2 md:space-y-8 lg:space-y-4 duration-500 hover:duration-500 hover:transition-all hover:bg-app-orange-50'>
       <h3
         className={`text-right ${fontsizes.titles} font-bold text-app-grey-20 max-h-max `}
       >

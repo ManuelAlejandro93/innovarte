@@ -10,7 +10,11 @@ export const CompTesting = () => {
         subtitle={loremGeneral}
         viewAllButton={<AppButton text={'View All'} />}
       >
-        <BenefitCard></BenefitCard>
+        <div className='grid grid-cols-3'>
+          <BenefitCard></BenefitCard>
+          <BenefitCard></BenefitCard>
+          <BenefitCard></BenefitCard>
+        </div>
       </SingleSection>
     </div>
   );
