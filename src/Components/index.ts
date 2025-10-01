@@ -10,3 +10,4 @@ export * from './SingleSectionHeader';
 export * from './SingleSection';
 
 export * from './Cards';
+export * from './Grids';

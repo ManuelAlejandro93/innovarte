@@ -1,4 +1,4 @@
-import { AppButton, SingleSection, BenefitCard } from '@/Components';
+import { AppButton, SingleSection, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
 
 export const CompTesting = () => {
@@ -10,11 +10,7 @@ export const CompTesting = () => {
         subtitle={loremGeneral}
         viewAllButton={<AppButton text={'View All'} />}
       >
-        <div className='grid grid-cols-3'>
-          <BenefitCard></BenefitCard>
-          <BenefitCard></BenefitCard>
-          <BenefitCard></BenefitCard>
-        </div>
+        <BenefitGrid></BenefitGrid>
       </SingleSection>
     </div>
   );
