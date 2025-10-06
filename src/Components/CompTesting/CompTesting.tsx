@@ -32,3 +32,5 @@ export const CompTesting = () => {
     </div>
   );
 };
+
+//Antes de empezar a cambiar la card individual.
