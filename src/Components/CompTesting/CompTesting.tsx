@@ -16,13 +16,17 @@ export const CompTesting = () => {
           {/* //! Our Course Card */}
           {courses.map((singleCourse, i) => (
             <div
-              className=' w-full h-96 lg:h-[520px] p-4 md:p-6 lg:p-8 xl:p-12'
+              className='bg-red-200 w-full h-96 lg:h-[520px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'
               key={`${singleCourse}_${i}`}
             >
               <img
                 src={singleCourse.url}
                 alt={singleCourse.description}
+                className='w-full h-auto 2xl:h-[300px] bg-slate-500'
               />
+              <div className='bg-green-200 max-h-max'>Divvvv</div>
+              <div className='bg-green-200 max-h-max'>Divvvv</div>
+              <div className='bg-green-200 max-h-max'>Divvvv</div>
             </div>
           ))}
           {/* //! Our Course Card */}
