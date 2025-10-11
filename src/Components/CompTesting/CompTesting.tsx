@@ -22,8 +22,9 @@ export const CompTesting = () => {
               key={`${i}_${singleCourse.url}`}
               description={singleCourse.description}
               url={singleCourse.url}
-              texto1={singleCourse.intensidad}
-              texto2={singleCourse.area}
+              area={singleCourse.area}
+              intensity={singleCourse.intensity}
+              teacher={singleCourse.teacher}
             />
           ))}
         </OurCoursesGrid>

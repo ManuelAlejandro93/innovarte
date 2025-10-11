@@ -1,2 +1,2 @@
-export * from './CourseSectionImages';
+export * from './CourseSectionData';
 export * from './BenefitInfo';

@@ -1,6 +1,7 @@
 export interface CourseSectionDataInterface {
   url: string;
   description: string;
-  intensidad: string;
+  intensity: string;
   area: string;
+  teacher: string;
 }
