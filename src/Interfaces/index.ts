@@ -5,3 +5,5 @@ export * from './ClassNameInterface';
 export * from './BoltIconInterface';
 export * from './BenefitInfoInterface';
 export * from './OurCourseBadgetInterface';
+export * from './OurCoursSingleCardInterface';
+export * from './CourseSectionDataInterface';

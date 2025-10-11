@@ -1,14 +1,12 @@
 import { OurCourseBadget } from '@/Components';
 import { fontsizes } from '@/Standars';
-
-interface OurCoursSingleCardInterface {
-  url: string;
-  description: string;
-}
+import { OurCoursSingleCardInterface } from '@/Interfaces';
 
 export const OurCoursSingleCard = ({
   description,
-  url
+  url,
+  texto1,
+  texto2
 }: OurCoursSingleCardInterface) => {
   return (
     <div className='bg-red-200 w-full h-96 lg:h-[520px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
@@ -20,9 +18,9 @@ export const OurCoursSingleCard = ({
       {/* //! */}
       <div className='OurCoursesBadgeteContainer flex justify-between items-center flex-col md:flex-row'>
         <div className={`divLeft ${fontsizes.general} flex`}>
-          <OurCourseBadget text='4 Weeks' />
+          <OurCourseBadget text={texto1 ?? '4 Weeks'} />
           <OurCourseBadget
-            text='4 Weeks'
+            text={texto2 ?? '4 Weeks'}
             className='ml-4'
           />
         </div>

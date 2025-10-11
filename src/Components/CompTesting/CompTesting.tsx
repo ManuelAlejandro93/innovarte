@@ -5,7 +5,7 @@ import {
   OurCoursesGrid
 } from '@/Components';
 import { loremGeneral } from '@/Standars';
-import { courseSectionImages as courses } from '@/Data';
+import { courseSectionData as courses } from '@/Data';
 
 export const CompTesting = () => {
   return (
@@ -22,6 +22,8 @@ export const CompTesting = () => {
               key={`${i}_${singleCourse.url}`}
               description={singleCourse.description}
               url={singleCourse.url}
+              texto1={singleCourse.intensidad}
+              texto2={singleCourse.area}
             />
           ))}
         </OurCoursesGrid>
