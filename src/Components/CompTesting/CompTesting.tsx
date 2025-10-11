@@ -37,4 +37,4 @@ export const CompTesting = () => {
   );
 };
 
-//Antes de empezar a cambiar la card individual.
+//Checkpoint before ourCourses badget changes.
