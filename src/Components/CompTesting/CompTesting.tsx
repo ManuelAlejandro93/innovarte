@@ -1,5 +1,5 @@
-import { SingleSection, AppButton } from '@/Components';
-import { loremGeneral } from '@/Standars';
+import { SingleSection, AppButton, OurCourseBadget } from '@/Components';
+import { loremGeneral, fontsizes } from '@/Standars';
 import { courseSectionImages as courses } from '@/Data';
 
 export const CompTesting = () => {
@@ -22,11 +22,20 @@ export const CompTesting = () => {
               <img
                 src={singleCourse.url}
                 alt={singleCourse.description}
-                className='w-full h-auto 2xl:h-[300px] bg-slate-500'
+                className='w-full h-auto 2xl:h-[300px] bg-slate-500 rounded-lg'
               />
-              <div className='bg-green-200 max-h-max'>Divvvv</div>
-              <div className='bg-green-200 max-h-max'>Divvvv</div>
-              <div className='bg-green-200 max-h-max'>Divvvv</div>
+              {/* //! */}
+              <div className='OurCoursesBadgeteContainer flex justify-between items-center flex-col md:flex-row'>
+                <div className={`divLeft ${fontsizes.general} flex`}>
+                  <OurCourseBadget text='4 Weeks' />
+                  <OurCourseBadget
+                    text='4 Weeks'
+                    className='ml-4'
+                  />
+                </div>
+                <h4>By Henrick Tommas.</h4>
+              </div>
+              {/* //! */}
             </div>
           ))}
           {/* //! Our Course Card */}
