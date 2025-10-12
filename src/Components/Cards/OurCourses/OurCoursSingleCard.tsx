@@ -1,5 +1,5 @@
 import { OurCourseBadget } from '@/Components';
-import { fontsizes } from '@/Standars';
+import { fontsizes, loremGeneral } from '@/Standars';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
 
 export const OurCoursSingleCard = ({
@@ -28,6 +28,7 @@ export const OurCoursSingleCard = ({
           By {teacher ?? 'Henrick Tommas.'}
         </h4>
       </div>
+      {/* <p className={`${fontsizes.general}`}>{loremGeneral}</p> */}
     </div>
   );
 };
