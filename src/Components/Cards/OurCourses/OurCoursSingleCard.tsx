@@ -28,7 +28,16 @@ export const OurCourseSingleCard = ({
           By {teacher ?? 'Henrick Tommas.'}
         </h4>
       </div>
-      {/* <p className={`${fontsizes.general}`}>{loremGeneral}</p> */}
+      <div>
+        <p className={`text-app-grey-20 font-semibold ${fontsizes.cardTitles}`}>
+          {'Flexible Learning Schedule'}
+        </p>
+        <p className={`text-app-grey-30 ${fontsizes.general}`}>
+          {
+            'Fit your coursework around your existing commiments and obligations.'
+          }
+        </p>
+      </div>
     </div>
   );
 };
