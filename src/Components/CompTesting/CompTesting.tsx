@@ -1,7 +1,7 @@
 import {
   SingleSection,
   AppButton,
-  OurCoursSingleCard,
+  OurCourseSingleCard,
   OurCoursesGrid
 } from '@/Components';
 import { loremGeneral } from '@/Standars';
@@ -18,7 +18,7 @@ export const CompTesting = () => {
       >
         <OurCoursesGrid>
           {courses.map((singleCourse, i) => (
-            <OurCoursSingleCard
+            <OurCourseSingleCard
               key={`${i}_${singleCourse.url}`}
               description={singleCourse.description}
               url={singleCourse.url}

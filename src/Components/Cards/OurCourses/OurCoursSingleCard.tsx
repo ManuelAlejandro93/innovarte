@@ -2,7 +2,7 @@ import { OurCourseBadget } from '@/Components';
 import { fontsizes, loremGeneral } from '@/Standars';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
 
-export const OurCoursSingleCard = ({
+export const OurCourseSingleCard = ({
   area,
   description,
   intensity,
@@ -24,7 +24,7 @@ export const OurCoursSingleCard = ({
             className='ml-4'
           />
         </div>
-        <h4 className={`${fontsizes.general} text-app-grey-15`}>
+        <h4 className={`${fontsizes.general} text-app-grey-15 font-medium`}>
           By {teacher ?? 'Henrick Tommas.'}
         </h4>
       </div>
