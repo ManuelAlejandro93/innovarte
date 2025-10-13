@@ -1,5 +1,5 @@
 import { OurCourseBadget } from '@/Components';
-import { fontsizes, loremGeneral } from '@/Standars';
+import { fontsizes } from '@/Standars';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
 
 export const OurCourseSingleCard = ({
