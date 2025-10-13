@@ -24,7 +24,9 @@ export const OurCourseSingleCard = ({
             className='ml-4'
           />
         </div>
-        <h4 className={`${fontsizes.general} text-app-grey-15 font-medium`}>
+        <h4
+          className={`${fontsizes.general} text-app-grey-15 font-medium mt-2 md:mt-0`}
+        >
           By {teacher ?? 'Henrick Tommas.'}
         </h4>
       </div>
