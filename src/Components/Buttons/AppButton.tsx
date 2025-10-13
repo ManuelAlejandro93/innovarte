@@ -1,16 +1,12 @@
+import { ReactNode } from 'react';
 import { fontsizes } from '@/Standars';
 import { grey_15 } from '@/UI';
-import { ReactNode } from 'react';
-
-interface ViewAllReadAllButton {
-  className?: String;
-  text: String;
-}
+import { AppButtonInterface } from '@/Interfaces';
 
 export const AppButton = ({
   className,
   text
-}: ViewAllReadAllButton): ReactNode => {
+}: AppButtonInterface): ReactNode => {
   return (
     <a
       href='#'

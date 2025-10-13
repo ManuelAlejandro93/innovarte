@@ -1,4 +1,4 @@
-import { OurCourseBadget } from '@/Components';
+import { OurCourseBadget, AppButton } from '@/Components';
 import { fontsizes } from '@/Standars';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
 
@@ -38,6 +38,10 @@ export const OurCourseSingleCard = ({
           }
         </p>
       </div>
+      <AppButton
+        text={'Get it now'}
+        className='text-center'
+      />
     </div>
   );
 };
