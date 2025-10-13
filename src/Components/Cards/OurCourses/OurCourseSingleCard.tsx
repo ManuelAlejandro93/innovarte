@@ -10,11 +10,11 @@ export const OurCourseSingleCard = ({
   url
 }: OurCoursSingleCardInterface) => {
   return (
-    <div className='w-full h-[440px] lg:h-[560px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
+    <div className='rounded-lg border-2 border-app-white-90 w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
       <img
         src={url}
         alt={description}
-        className='w-full h-auto 2xl:h-[300px] bg-slate-500 rounded-lg'
+        className='w-full h-auto 2xl:h-[300px] rounded-lg'
       />
       <div className='OurCoursesBadgeteContainer flex justify-between  flex-col md:flex-row md:items-center'>
         <div className={`divLeft ${fontsizes.general} flex`}>

@@ -1,1 +1,1 @@
-export * from './OurCoursSingleCard';
+export * from './OurCourseSingleCard';
