@@ -1,4 +1,9 @@
-import { SingleSection, AppButton, TestimonialGrid } from '@/Components';
+import {
+  SingleSection,
+  AppButton,
+  TestimonialGrid,
+  TestimonialSingleCard
+} from '@/Components';
 import { loremGeneral } from '@/Standars';
 
 export const CompTesting = () => {
@@ -11,12 +16,7 @@ export const CompTesting = () => {
         viewAllButton={<AppButton text={'View All'} />}
       >
         <TestimonialGrid>
-          <h1>H1 Test</h1>
-          <h1>H1 Test</h1>
-          <h1>H1 Test</h1>
-          <h1>H1 Test</h1>
-          <h1>H1 Test</h1>
-          <h1>H1 Test</h1>
+          <TestimonialSingleCard />
         </TestimonialGrid>
       </SingleSection>
     </div>
