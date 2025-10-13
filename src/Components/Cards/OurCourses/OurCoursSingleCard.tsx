@@ -10,7 +10,7 @@ export const OurCourseSingleCard = ({
   url
 }: OurCoursSingleCardInterface) => {
   return (
-    <div className='200 w-full h-96 lg:h-[520px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
+    <div className='w-full h-[440px] lg:h-[560px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
       <img
         src={url}
         alt={description}
