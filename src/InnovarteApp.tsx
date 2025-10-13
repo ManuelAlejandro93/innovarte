@@ -8,7 +8,7 @@ import {
   CompTesting
 } from './Components';
 
-import { Benefits } from '@/Sections';
+import { Benefits, OurCourses } from '@/Sections';
 
 export const InnovarteApp = () => {
   return (
@@ -22,6 +22,10 @@ export const InnovarteApp = () => {
 
           <SingleSectionContainer>
             <Benefits></Benefits>
+          </SingleSectionContainer>
+
+          <SingleSectionContainer>
+            <OurCourses></OurCourses>
           </SingleSectionContainer>
 
           {/* //? Componente de Testing. */}
