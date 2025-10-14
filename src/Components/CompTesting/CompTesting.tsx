@@ -1,11 +1,3 @@
-import {
-  SingleSection,
-  AppButton,
-  TestimonialGrid,
-  TestimonialSingleCard
-} from '@/Components';
-import { loremGeneral } from '@/Standars';
-
 export const CompTesting = () => {
   return (
     <div>
