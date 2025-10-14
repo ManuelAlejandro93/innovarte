@@ -12,3 +12,5 @@ export * from './SingleSection';
 export * from './Cards';
 export * from './Grids';
 export * from './Badgets';
+
+export * from './Text';
