@@ -17,6 +17,12 @@ export const CompTesting = () => {
       >
         <TestimonialGrid>
           <TestimonialSingleCard />
+          <TestimonialSingleCard />
+          <TestimonialSingleCard />
+          <TestimonialSingleCard />
+          <TestimonialSingleCard />
+          <TestimonialSingleCard />
+          <TestimonialSingleCard />
         </TestimonialGrid>
       </SingleSection>
     </div>
