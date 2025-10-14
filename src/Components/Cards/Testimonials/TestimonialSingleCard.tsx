@@ -8,7 +8,11 @@ export const TestimonialSingleCard = () => {
         <AppGeneralText />
         <div className='testimonial-botton-div-container flex justify-between items-center'>
           <div className='flex items-center'>
-            <BoltIcon className='size-9 md:size-10 lg:size-16  xl:bottom-0 xl:size-16 text-app-grey-20' />
+            <img
+              src='https://res.cloudinary.com/dkr08foul/image/upload/v1760477803/Photo2_qxph1t.png'
+              alt='photo1'
+              className='w-14 h-auto md:w-12 lg:w-16 xl:w-20'
+            />
             <AppGeneralText
               className='ml-2'
               text='Sarah Lee'
