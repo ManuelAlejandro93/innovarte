@@ -4,10 +4,11 @@ import { SingleSectionHeaderInterface } from '@/Interfaces';
 export const SingleSectionHeader = ({
   title,
   subtitle,
-  viewAllButton
+  viewAllButton,
+  className
 }: SingleSectionHeaderInterface) => {
   return (
-    <>
+    <div className={`${className}`}>
       <h2 className={`${fontsizes.titles} text-app-grey-20 mb-1 font-semibold`}>
         {title ?? loremTitle}
       </h2>
@@ -24,6 +25,6 @@ export const SingleSectionHeader = ({
         )}
       </div>
       <div className='mt-8 md:mt-6 lg:mt-8' />
-    </>
+    </div>
   );
 };

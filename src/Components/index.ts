@@ -14,3 +14,4 @@ export * from './Grids';
 export * from './Badgets';
 
 export * from './Text';
+export * from './FAQHeader';
