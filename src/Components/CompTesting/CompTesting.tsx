@@ -1,5 +1,3 @@
-import { Pricing } from '@/Sections';
-
 export const CompTesting = () => {
   return (
     <div>
