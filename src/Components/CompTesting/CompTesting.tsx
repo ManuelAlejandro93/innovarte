@@ -1,5 +1,5 @@
 import { loremGeneral, fontsizes } from '@/Standars';
-import { SingleSection } from '@/Components';
+import { SingleSection, AppButton } from '@/Components';
 
 export const CompTesting = () => {
   return (
@@ -10,23 +10,15 @@ export const CompTesting = () => {
         subtitle={loremGeneral}
       >
         {/* //!Container */}
-        <div className='bg-yellow-200 flex p-4 md:p-6 lg:p-8 xl:p-12 gap-6 md:gap-8 lg:gap-10 xl:gap-14 flex-col md:flex-row'>
-          <div className='w-full h-fit grid gap-4 bg-orange-400'>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
+        <div className='flex p-4 md:p-6 lg:p-8 xl:p-12 gap-6 md:gap-8 lg:gap-10 xl:gap-14 flex-col md:flex-row'>
+          {/* //! 1 single card */}
+          <div className='w-full h-fit grid gap-4'>
+            <AppButton
+              text={'Contado'}
+              className={`bg-app-orange-90 text-center ${fontsizes.cardTitles} font-semibold`}
+            ></AppButton>
           </div>
-          <div className='w-full h-fit grid gap-4 bg-orange-400'>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-            <h1 className={`${fontsizes.general} text-center`}>oee</h1>
-          </div>
+          {/* //! 1 single card */}
         </div>
         {/* //!Container */}
       </SingleSection>
