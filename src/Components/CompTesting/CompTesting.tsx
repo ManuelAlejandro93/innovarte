@@ -6,7 +6,7 @@ export const CompTesting = () => {
       <p className='text-red-500 text-3xl text-center'>
         ---In Process Component---
       </p>
-      <Pricing></Pricing>
+
       <p className='text-red-500 text-3xl text-center'>
         ---In Process Component---
       </p>
