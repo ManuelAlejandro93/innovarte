@@ -1,24 +1,72 @@
+import { Check as CheckIcon, X as XIcon } from 'lucide-react';
 import { AppButton, AppGeneralText } from '@/Components';
 import { ClassNameInterface } from '@/Interfaces';
 import { fontsizes } from '@/Standars';
 
 export const PricingSingleCard = ({ className }: ClassNameInterface) => {
   return (
-    <div className={`w-full h-fit grid gap-4 ${className}`}>
+    <div
+      className={`w-full h-fit grid gap-4 rounded-3xl border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12  ${className}`}
+    >
       <AppButton
         text={'Contado'}
         className={`text-center`}
         backgroud_color={'bg-app-orange-90'}
       />
-      <div>
-        <div className='flex justify-center items-baseline'>
-          <p
-            className={`${fontsizes.titles} text-center font-bold text-app-grey-20 max-h-max`}
-          >
-            300K
-          </p>
-          <AppGeneralText text='/total' />
-        </div>
+
+      <div className='flex justify-center items-baseline'>
+        <p
+          className={`${fontsizes.titles} text-center font-bold max-h-max text-app-orange-50`}
+        >
+          300K
+        </p>
+        <AppGeneralText text='/total' />
+      </div>
+      <AppGeneralText
+        text='Condiciones de pago'
+        className='font-bold text-center uppercase'
+      />
+      <div className='flex justify-center items-center'>
+        <CheckIcon className='mr-2 text-green-500' />
+        <AppGeneralText
+          text='Beneficio 1'
+          className='text-center'
+        />
+      </div>
+      <div className='flex justify-center items-center'>
+        <XIcon className='mr-2 text-red-500' />
+        <AppGeneralText
+          text='Beneficio 2'
+          className='text-center'
+        />
+      </div>
+      <div className='flex justify-center items-center'>
+        <CheckIcon className='mr-2 text-green-500' />
+        <AppGeneralText
+          text='Beneficio 1'
+          className='text-center'
+        />
+      </div>
+      <div className='flex justify-center items-center'>
+        <XIcon className='mr-2 text-red-500' />
+        <AppGeneralText
+          text='Beneficio 2'
+          className='text-center'
+        />
+      </div>
+      <div className='flex justify-center items-center'>
+        <CheckIcon className='mr-2 text-green-500' />
+        <AppGeneralText
+          text='Beneficio 1'
+          className='text-center'
+        />
+      </div>
+      <div className='flex justify-center items-center'>
+        <XIcon className='mr-2 text-red-500' />
+        <AppGeneralText
+          text='Beneficio 2'
+          className='text-center'
+        />
       </div>
     </div>
   );
