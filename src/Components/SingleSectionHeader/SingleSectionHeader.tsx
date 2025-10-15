@@ -15,9 +15,13 @@ export const SingleSectionHeader = ({
         <h3 className={`${fontsizes.general} text-app-grey-30 w-2/3`}>
           {subtitle ?? loremGeneral}
         </h3>
-        <span className='md:flex md:flex-col md:justify-end'>
-          {viewAllButton}
-        </span>
+        {viewAllButton ? (
+          <span className='md:flex md:flex-col md:justify-end'>
+            {viewAllButton}
+          </span>
+        ) : (
+          ''
+        )}
       </div>
       <div className='mt-8 md:mt-6 lg:mt-8' />
     </>

@@ -4,5 +4,5 @@ export interface SingleSectionInterface {
   children: ReactNode;
   title: String;
   subtitle: String;
-  viewAllButton: ReactNode;
+  viewAllButton?: ReactNode;
 }
