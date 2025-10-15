@@ -9,6 +9,7 @@ export const Pricing = () => {
     >
       <PricingGrid>
         <PricingSingleCard></PricingSingleCard>
+        <PricingSingleCard></PricingSingleCard>
       </PricingGrid>
     </SingleSection>
   );
