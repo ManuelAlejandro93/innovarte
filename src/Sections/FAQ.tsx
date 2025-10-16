@@ -11,7 +11,7 @@ export const FAQ = () => {
         />
         <AppButton text={'See all FAQ´s'}></AppButton>
       </div>
-      <div className='w-full h-fit rounded-lg border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4'>
+      <div className='w-full h-fit grid gap-4 rounded-lg border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12'>
         <h1>Gordooo</h1>
       </div>
     </FAQGrid>
