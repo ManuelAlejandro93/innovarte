@@ -2,7 +2,7 @@ import { FAQGrid, FAQHeader, AppButton } from '@/Components';
 export const FAQ = () => {
   return (
     <FAQGrid>
-      <div className='rounded-lg border-2 border-app-white-90 p-4 pb-8 md:p-6 lg:p-8 xl:p-12'>
+      <div className='rounded-lg p-4 pb-8 md:p-6 lg:p-8 xl:p-12'>
         <FAQHeader
           title={'Frecuently Asked Questions'}
           subtitle={
@@ -11,7 +11,7 @@ export const FAQ = () => {
         />
         <AppButton text={'See all FAQ´s'}></AppButton>
       </div>
-      <div className='w-full h-52 rounded-lg border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12'>
+      <div className='w-full h-fit rounded-lg border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4'>
         <h1>Gordooo</h1>
       </div>
     </FAQGrid>
