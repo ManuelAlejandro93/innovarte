@@ -12,9 +12,9 @@ import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
 
 export const Footer = () => {
   return (
-    <div className='w-full'>
-      <div className='flex flex-col justify-between md:flex-row'>
-        <div className='space-y-2'>
+    <div className='footer-container w-full grid gap-4'>
+      <div className='two-upper-div-container grid gap-4 md:flex md:flex-row md:justify-between'>
+        <div className='grid gap-2'>
           <img
             src='Logos/Logo-desktop.png'
             alt='company-logo'
@@ -42,8 +42,8 @@ export const Footer = () => {
             />
           </div>
         </div>
-        <div className='flex '>
-          <div className='grid h-full '>
+        <div className='flex justify-between'>
+          <div className='grid gap-2'>
             <FooterAnchor
               text='Home'
               className='font-bold'
