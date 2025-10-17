@@ -1,11 +1,13 @@
 import {
   Mail as MailIcon,
   Phone as PhoneIcon,
-  MapPin as MapPinIcon
+  MapPin as MapPinIcon,
+  Facebook as FacebookIcon,
+  Instagram as InstagramIcon
 } from 'lucide-react';
 
 import { imgSizes } from '@/Standars';
-import { AppGeneralText, FooterAnchor } from '@/Components';
+import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
 
 export const Footer = () => {
   return (
@@ -50,7 +52,18 @@ export const Footer = () => {
             <FooterAnchor text='Our Testimonials' />
             <FooterAnchor text='Our FAQ' />
           </div>
-          <div>gordoo</div>
+          <div>
+            <AppGeneralText
+              className='font-bold'
+              text='Social Profiles'
+            />
+
+            <div className='grid grid-cols-3 gap-2'>
+              <FacebookIcon />
+              <InstagramIcon />
+              <WhatsappIcon className='w-8 md:w-9' />
+            </div>
+          </div>
         </div>
       </div>
       <div className=' bg-red-200'>dddd</div>
