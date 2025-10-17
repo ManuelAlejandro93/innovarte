@@ -5,12 +5,12 @@ import {
 } from 'lucide-react';
 
 import { imgSizes } from '@/Standars';
-import { AppGeneralText } from '@/Components';
+import { AppGeneralText, FooterAnchor } from '@/Components';
 
 export const Footer = () => {
   return (
     <div className='w-full'>
-      <div className='flex flex-col md:flex-row '>
+      <div className='flex flex-col justify-between md:flex-row '>
         <div className='space-y-2'>
           <img
             src='Logos/Logo-desktop.png'
@@ -39,9 +39,21 @@ export const Footer = () => {
             />
           </div>
         </div>
-        <div className=' bg-blue-200'></div>
+        <div className='flex '>
+          <div className='grid h-full '>
+            <FooterAnchor
+              text='Home'
+              className='font-bold'
+            />
+            <FooterAnchor text='Benefits' />
+            <FooterAnchor text='Our Courses' />
+            <FooterAnchor text='Our Testimonials' />
+            <FooterAnchor text='Our FAQ' />
+          </div>
+          <div>gordoo</div>
+        </div>
       </div>
-      <div className=' bg-red-200'></div>
+      <div className=' bg-red-200'>dddd</div>
     </div>
   );
 };
