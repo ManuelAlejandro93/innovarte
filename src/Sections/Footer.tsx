@@ -3,7 +3,8 @@ import {
   Phone as PhoneIcon,
   MapPin as MapPinIcon,
   Facebook as FacebookIcon,
-  Instagram as InstagramIcon
+  Instagram as InstagramIcon,
+  CopyrightIcon
 } from 'lucide-react';
 
 import { imgSizes } from '@/Standars';
@@ -12,7 +13,7 @@ import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
 export const Footer = () => {
   return (
     <div className='w-full'>
-      <div className='flex flex-col justify-between md:flex-row '>
+      <div className='flex flex-col justify-between md:flex-row'>
         <div className='space-y-2'>
           <img
             src='Logos/Logo-desktop.png'
@@ -66,7 +67,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=' bg-red-200'>dddd</div>
+      <div className='flex justify-center items-center'>
+        <CopyrightIcon className='text-app-grey-30' />
+        <AppGeneralText
+          text={'2025 Innovarte All Rigths Reserved'}
+          className='ml-2'
+        />
+      </div>
     </div>
   );
 };
