@@ -4,11 +4,17 @@ import {
   Header,
   SectionContainer,
   SingleSectionContainer,
-  Hero,
-  CompTesting
+  Hero
 } from './Components';
 
-import { Benefits, FAQ, OurCourses, Pricing, Testimonials } from '@/Sections';
+import {
+  Benefits,
+  FAQ,
+  Footer,
+  OurCourses,
+  Pricing,
+  Testimonials
+} from '@/Sections';
 
 export const InnovarteApp = () => {
   return (
@@ -37,13 +43,14 @@ export const InnovarteApp = () => {
           </SingleSectionContainer>
 
           <SingleSectionContainer>
-            <FAQ></FAQ>
+            <div className='rounded-lg border-2 border-app-white-90'>
+              <FAQ></FAQ>
+            </div>
           </SingleSectionContainer>
-          {/* //? Componente de Testing. */}
+
           <SingleSectionContainer>
-            <CompTesting></CompTesting>
+            <Footer></Footer>
           </SingleSectionContainer>
-          {/* //? Componente de Testing. */}
         </SectionContainer>
       </GrandContainer>
     </AppContainer>
