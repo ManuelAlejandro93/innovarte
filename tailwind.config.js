@@ -43,6 +43,7 @@ export default {
           'grey-60': appColors.grey_60,
           'grey-70': appColors.grey_70
         },
+        brand: { blue: '#03588C' },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
