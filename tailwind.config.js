@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 import * as appColors from './src/UI/Colors';
+import * as branColors from './src/Innovarte_Brand/OficialColors';
 
 export default {
   darkMode: ['class'],
@@ -43,7 +44,11 @@ export default {
           'grey-60': appColors.grey_60,
           'grey-70': appColors.grey_70
         },
-        brand: { blue: '#03588C' },
+        brand: {
+          blue: branColors.brandBlue,
+          yellow: branColors.brandYellow,
+          white: branColors.brandWhite
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
