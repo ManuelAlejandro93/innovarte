@@ -46,6 +46,7 @@ export const Footer = () => {
             <FooterAnchor
               text='Home'
               className='font-bold'
+              text_color='text-app-blue-50'
             />
             <FooterAnchor text='Benefits' />
             <FooterAnchor text='Our Courses' />
@@ -56,6 +57,7 @@ export const Footer = () => {
             <AppGeneralText
               className='font-bold'
               text='Social Profiles'
+              text_color='text-app-blue-50'
             />
 
             <div className='grid grid-cols-3 gap-2'>
