@@ -1,17 +1,15 @@
 import { HambMenu } from '@/Components';
 import { fontsizes, imgSizes } from '@/Standars';
 
+import { InnovarteIcon } from '@/Icons';
+
 export const Navbar = () => {
   return (
     <nav
       className={`navbar grid grid-cols-2 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2 ${fontsizes.general}`}
     >
       <div className='section-routes flex items-center md:justify-between lg:justify-between'>
-        <img
-          src='Logos/Logo-desktop.png'
-          alt='company-logo'
-          className={`${imgSizes}`}
-        />
+        <InnovarteIcon className={`${imgSizes}`} />
         <a
           href='#'
           className='bg-app-white-75 rounded-lg hidden md:block md:py-2 md:px-0 lg:py-2 lg:px-1 xl:p-4'

@@ -7,19 +7,18 @@ import {
   CopyrightIcon
 } from 'lucide-react';
 
-import { imgSizes } from '@/Standars';
 import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
+
+import { imgSizes } from '@/Standars';
+
+import { InnovarteIcon } from '@/Icons';
 
 export const Footer = () => {
   return (
     <div className='footer-container w-full grid gap-4'>
       <div className='two-upper-div-container grid gap-4 md:flex md:flex-row md:justify-between'>
         <div className='grid gap-2'>
-          <img
-            src='Logos/Logo-desktop.png'
-            alt='company-logo'
-            className={`${imgSizes}`}
-          />
+          <InnovarteIcon className={`${imgSizes}`} />
           <div className='flex items-center'>
             <MailIcon />
             <AppGeneralText

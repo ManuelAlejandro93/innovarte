@@ -54,10 +54,6 @@ export const InnovarteApp = () => {
           <SingleSectionContainer>
             <Footer></Footer>
           </SingleSectionContainer>
-
-          <SingleSectionContainer>
-            <InnovarteIcon></InnovarteIcon>
-          </SingleSectionContainer>
         </SectionContainer>
       </GrandContainer>
     </AppContainer>

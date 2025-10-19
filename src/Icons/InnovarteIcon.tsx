@@ -1,4 +1,5 @@
 import { IconInterface } from '@/Interfaces';
+
 export const InnovarteIcon = ({ className, size }: IconInterface) => {
   return (
     <svg
