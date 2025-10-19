@@ -10,7 +10,7 @@ export const OurCourseSingleCard = ({
   url
 }: OurCoursSingleCardInterface) => {
   return (
-    <div className='rounded-lg border-2 border-app-white-90 w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4'>
+    <div className='rounded-lg  w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4 '>
       <img
         src={url}
         alt={description}
@@ -25,7 +25,7 @@ export const OurCourseSingleCard = ({
           />
         </div>
         <h4
-          className={`${fontsizes.general} text-app-grey-15 font-medium mt-2 md:mt-0`}
+          className={`${fontsizes.general} text-app-blue-50 font-medium mt-2 md:mt-0`}
         >
           By {teacher ?? 'Henrick Tommas.'}
         </h4>
