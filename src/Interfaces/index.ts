@@ -11,3 +11,4 @@ export * from './AppButtonInterface';
 export * from './Children_Class_Interface';
 export * from './ClassTextInterface';
 export * from './IconInterface';
+export * from './GeneralTextInterface';

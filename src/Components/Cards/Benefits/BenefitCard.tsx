@@ -8,7 +8,7 @@ export const BenefitCard = ({
   benefitDescription
 }: BenefitInfoInterface & { benefitNumber: number }) => {
   return (
-    <div className='bg-app-yellow-80 w-full h-[340px] md:h-52 lg:h-64 xl:h-96 rounded-2xl p-10 md:p-2 lg:p-4 xl:p-8 grid grid-cols-1 space-y-2 md:space-y-2 lg:space-y-4 duration-500 hover:duration-500 hover:transition-all'>
+    <div className='bg-app-blue-95 w-full h-[340px] md:h-52 lg:h-64 xl:h-96 rounded-2xl p-10 md:p-2 lg:p-4 xl:p-8 grid grid-cols-1 space-y-2 md:space-y-2 lg:space-y-4 duration-500 hover:duration-500 hover:transition-all'>
       <h3
         className={`text-right ${fontsizes.titles} font-bold text-yellow-600 max-h-max`}
       >

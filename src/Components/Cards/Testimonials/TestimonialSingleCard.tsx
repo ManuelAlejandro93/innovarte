@@ -17,8 +17,9 @@ export const TestimonialSingleCard = () => {
           <div className='ml-2'>
             <AppGeneralText text='Sarah Lee' />
             <AppGeneralText
-              className='font-bold text-app-blue-50'
+              className='font-bold'
               text='Civil Engineering Student.'
+              text_color='text-app-blue-50'
             />
           </div>
         </div>
