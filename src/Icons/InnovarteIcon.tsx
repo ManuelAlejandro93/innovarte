@@ -1,11 +1,12 @@
-export const InnovarteIcon = () => {
+import { IconInterface } from '@/Interfaces';
+export const InnovarteIcon = ({ className, size }: IconInterface) => {
   return (
     <svg
       viewBox='0 0 240 240'
       xmlns='http://www.w3.org/2000/svg'
-      width={100}
-      height={100}
-      className='rounded-2xl'
+      width={size ?? 22}
+      height={size ?? 22}
+      className={`rounded-2xl ${className}`}
     >
       <rect
         width='100%'
