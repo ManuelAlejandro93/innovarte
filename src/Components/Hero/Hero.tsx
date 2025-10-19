@@ -1,3 +1,4 @@
+import { Bolt } from '@/Icons';
 import { fontsizes, imgSizes } from '@/Standars';
 
 export const Hero = () => {
@@ -5,13 +6,15 @@ export const Hero = () => {
     <div className='pt-8 md:pt-16 space-y-5 md:space-y-10'>
       <div className='row1'>
         <div className='flex justify-center items-center'>
-          <img
+          {/* <img
             className={`${imgSizes} mr-2`}
             src='/Icons/flash-icon.png'
             alt='logo-image'
-          />
+          /> */}
+          <Bolt className={`w-10 md:w-16 lg:w-20 xl:w-2 text-yellow-500`} />
           <h2 className={`${fontsizes.titles} font-bold text-app-grey-15`}>
-            <span className='text-app-blue-50'>Unlock</span> Your Creative
+            <span className='text-app-blue-50'>Unlock</span> Your{' '}
+            <span className='text-yellow-500 '>Creative </span>
             Potential
           </h2>
           <img
