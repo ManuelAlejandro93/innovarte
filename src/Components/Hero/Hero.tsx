@@ -11,7 +11,7 @@ export const Hero = () => {
             src='/Icons/flash-icon.png'
             alt='logo-image'
           /> */}
-          <Bolt className={`w-10 md:w-16 lg:w-20 xl:w-2 text-yellow-500`} />
+          <Bolt className={`w-10 md:w-16 lg:w-20 xl:w-28 text-yellow-500`} />
           <h2 className={`${fontsizes.titles} font-bold text-app-grey-15`}>
             <span className='text-app-blue-50'>Unlock</span> Your{' '}
             <span className='text-yellow-500 '>Creative </span>
