@@ -19,7 +19,7 @@ export const FaqSingleCard = () => {
             text='Can I enrolle in multiple courses at once?'
             className='font-bold'
           />
-          <PlusIcon className='bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10' />
+          <PlusIcon className='bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white' />
         </div>
         <AppGeneralText text='Absolutly, you can enroll in multiple courses simultaneously and acces them at your convenience.' />
         <div className='h-1 w-full bg-app-blue-50 rounded-full' />
