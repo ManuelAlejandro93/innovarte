@@ -11,12 +11,12 @@ export const PricingSingleCard = ({ className }: ClassNameInterface) => {
       <AppButton
         text={'Contado'}
         className={`text-center`}
-        backgroud_color={'bg-app-orange-90'}
+        backgroud_color={'bg-app-blue-90'}
       />
 
       <div className='flex justify-center items-baseline'>
         <p
-          className={`${fontsizes.titles} text-center font-bold max-h-max text-app-orange-50`}
+          className={`${fontsizes.titles} text-center font-bold max-h-max text-app-blue-50`}
         >
           300K
         </p>

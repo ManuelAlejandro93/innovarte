@@ -50,7 +50,7 @@ export const Navbar = () => {
         </a>
         <a
           href='#'
-          className='bg-app-orange-50 text-app-white-95 rounded-md p-2 lg:p-2 xl:py-4 xl:px-8'
+          className='bg-app-blue-50 text-app-white-95 rounded-md p-2 lg:p-2 xl:py-4 xl:px-8'
         >
           Login
         </a>

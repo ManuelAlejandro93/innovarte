@@ -41,16 +41,6 @@ export default {
           'yellow-97': yellows.yellow_97,
           'yellow-99': yellows.yellow_99,
 
-          // Orange shades
-          'orange-50': appColors.orange_50,
-          'orange-70': appColors.orange_70,
-          'orange-75': appColors.orange_75,
-          'orange-80': appColors.orange_80,
-          'orange-90': appColors.orange_90,
-          'orange-95': appColors.orange_95,
-          'orange-97': appColors.orange_97,
-          'orange-99': appColors.orange_99,
-
           // White shades
           'white-90': appColors.white_90,
           'white-95': appColors.white_95,
