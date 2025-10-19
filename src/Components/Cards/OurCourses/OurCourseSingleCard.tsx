@@ -44,6 +44,7 @@ export const OurCourseSingleCard = ({
         text={'Get it now'}
         className='text-center'
       />
+      <div className='w-1/4 h-1 bg-app-blue-50 rounded-full' />
     </div>
   );
 };
