@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 import * as appColors from './src/UI/Colors';
-import * as branColors from './src/Innovarte_Brand/OficialColors';
 
 import * as blues from './src/Innovarte_Brand/oficial_blues';
 
