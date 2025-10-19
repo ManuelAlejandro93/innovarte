@@ -4,7 +4,8 @@ import {
   Header,
   SectionContainer,
   SingleSectionContainer,
-  Hero
+  Hero,
+  CompTesting
 } from './Components';
 
 import {
@@ -15,6 +16,8 @@ import {
   Pricing,
   Testimonials
 } from '@/Sections';
+
+import { InnovarteIcon } from '@/Icons';
 
 export const InnovarteApp = () => {
   return (
@@ -50,6 +53,10 @@ export const InnovarteApp = () => {
 
           <SingleSectionContainer>
             <Footer></Footer>
+          </SingleSectionContainer>
+
+          <SingleSectionContainer>
+            <InnovarteIcon></InnovarteIcon>
           </SingleSectionContainer>
         </SectionContainer>
       </GrandContainer>
