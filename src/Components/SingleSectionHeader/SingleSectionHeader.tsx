@@ -9,7 +9,9 @@ export const SingleSectionHeader = ({
 }: SingleSectionHeaderInterface) => {
   return (
     <div className={`${className}`}>
-      <h2 className={`${fontsizes.titles} text-app-grey-20 mb-1 font-semibold`}>
+      <h2
+        className={`${fontsizes.titles} text-app-blue-50  mb-1 font-semibold`}
+      >
         {title ?? loremTitle}
       </h2>
       <div className='grid space-y-4 md:flex md:flex-row md:justify-between'>
