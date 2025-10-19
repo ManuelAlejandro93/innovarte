@@ -24,7 +24,7 @@ export const PricingSingleCard = ({ className }: ClassNameInterface) => {
       </div>
       <AppGeneralText
         text='Condiciones de pago'
-        className='font-bold text-center uppercase'
+        className='font-bold text-center uppercase text-yellow-600'
       />
       <div className='flex justify-center items-center'>
         <CheckIcon className='mr-2 text-green-500' />
