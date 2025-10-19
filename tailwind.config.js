@@ -3,6 +3,10 @@
 import * as appColors from './src/UI/Colors';
 import * as branColors from './src/Innovarte_Brand/OficialColors';
 
+import * as blues from './src/Innovarte_Brand/oficial_blues';
+
+import * as yellows from './src/Innovarte_Brand/oficial_yellows';
+
 export default {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -18,6 +22,26 @@ export default {
       },
       colors: {
         app: {
+          // Blue shades
+          'blue-50': blues.blue_50,
+          'blue-70': blues.blue_70,
+          'blue-75': blues.blue_75,
+          'blue-80': blues.blue_80,
+          'blue-90': blues.blue_90,
+          'blue-95': blues.blue_95,
+          'blue-97': blues.blue_97,
+          'blue-99': blues.blue_99,
+
+          // Yellow shades
+          'yellow-50': yellows.yellow_50,
+          'yellow-70': yellows.yellow_70,
+          'yellow-75': yellows.yellow_75,
+          'yellow-80': yellows.yellow_80,
+          'yellow-90': yellows.yellow_90,
+          'yellow-95': yellows.yellow_95,
+          'yellow-97': yellows.yellow_97,
+          'yellow-99': yellows.yellow_99,
+
           // Orange shades
           'orange-50': appColors.orange_50,
           'orange-70': appColors.orange_70,
@@ -43,11 +67,6 @@ export default {
           'grey-40': appColors.grey_40,
           'grey-60': appColors.grey_60,
           'grey-70': appColors.grey_70
-        },
-        brand: {
-          blue: branColors.brandBlue,
-          yellow: branColors.brandYellow,
-          white: branColors.brandWhite
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

@@ -14,7 +14,7 @@ export const Navbar = () => {
         />
         <a
           href='#'
-          className='bg-app-white-95 rounded-lg hidden md:block md:py-2 md:px-0 lg:py-2 lg:px-1 xl:p-4'
+          className='bg-app-white-75 rounded-lg hidden md:block md:py-2 md:px-0 lg:py-2 lg:px-1 xl:p-4'
         >
           Home
         </a>

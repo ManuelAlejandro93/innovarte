@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-
 import { fontsizes } from '@/Standars';
 
 export const TopBanner = () => {
