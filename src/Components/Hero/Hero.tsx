@@ -39,13 +39,13 @@ export const Hero = () => {
       >
         <a
           href=''
-          className='bg-app-blue-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2'
+          className='bg-app-blue-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2 hover:bg-app-blue-75 hover:text-white'
         >
           Explore
         </a>
         <a
           href=''
-          className='rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white'
+          className='rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white hover:bg-app-blue-75 hover:text-white'
         >
           View Pricing
         </a>
