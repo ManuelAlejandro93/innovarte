@@ -8,7 +8,7 @@ export const Benefits = () => {
       subtitle={loremGeneral}
       viewAllButton={<AppButton text={'View All'} />}
     >
-      <BenefitGrid></BenefitGrid>
+      <BenefitGrid />
     </SingleSection>
   );
 };
