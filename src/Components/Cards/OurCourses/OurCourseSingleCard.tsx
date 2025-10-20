@@ -1,5 +1,6 @@
 import { OurCourseBadget, AppButton } from '@/Components';
 import { fontsizes } from '@/Standars';
+import { yellowButtonsHover } from '@/UI';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
 
 export const OurCourseSingleCard = ({
@@ -10,7 +11,7 @@ export const OurCourseSingleCard = ({
   url
 }: OurCoursSingleCardInterface) => {
   return (
-    <div className='rounded-lg  w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4 '>
+    <div className='rounded-lg  w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4 hover:bg-app-white-95'>
       <img
         src={url}
         alt={description}
@@ -42,7 +43,7 @@ export const OurCourseSingleCard = ({
       </div>
       <AppButton
         text={'Get it now'}
-        className='text-center'
+        className={`text-center ${yellowButtonsHover}`}
       />
       <div className='w-1/4 h-1 bg-app-blue-50 rounded-full' />
     </div>

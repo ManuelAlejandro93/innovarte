@@ -6,11 +6,11 @@ import { fontsizes } from '@/Standars';
 export const PricingSingleCard = ({ className }: ClassNameInterface) => {
   return (
     <div
-      className={`w-full h-fit grid gap-4 rounded-3xl border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12  ${className}`}
+      className={`w-full h-fit grid gap-4 rounded-3xl border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12 hover:bg-app-white-95 ${className}`}
     >
       <AppButton
         text={'Contado'}
-        className={`text-center`}
+        className={`text-center hover:bg-app-blue-75 hover:text-white`}
         backgroud_color={'bg-app-blue-90'}
       />
 

@@ -9,7 +9,9 @@ export const FooterAnchor = ({
   return (
     <a
       href='#'
-      className={`${text_color ? text_color : 'text-app-grey-30'} ${
+      className={`${
+        text_color ? text_color : 'text-app-grey-30'
+      } hover:text-app-blue-50 hover:underline ${
         fontsizes.general
       } ${className}`}
     >

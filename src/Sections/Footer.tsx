@@ -13,6 +13,8 @@ import { imgSizes } from '@/Standars';
 
 import { InnovarteIcon } from '@/Icons';
 
+import { blueHover } from '@/UI';
+
 export const Footer = () => {
   return (
     <div className='footer-container w-full grid gap-4'>
@@ -61,9 +63,9 @@ export const Footer = () => {
             />
 
             <div className='grid grid-cols-3 gap-2'>
-              <FacebookIcon />
-              <InstagramIcon />
-              <WhatsappIcon className='w-8 md:w-9' />
+              <FacebookIcon className='hover:text-app-blue-50' />
+              <InstagramIcon className='hover:text-app-blue-50' />
+              <WhatsappIcon className='w-8 md:w-9 hover:text-app-blue-50' />
             </div>
           </div>
         </div>

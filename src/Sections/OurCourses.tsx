@@ -6,13 +6,19 @@ import {
 } from '@/Components';
 import { loremGeneral } from '@/Standars';
 import { courseSectionData as courses } from '@/Data';
+import { yellowButtonsHover } from '@/UI';
 
 export const OurCourses = () => {
   return (
     <SingleSection
       title={'Our Courses'}
       subtitle={loremGeneral}
-      viewAllButton={<AppButton text={'View All'} />}
+      viewAllButton={
+        <AppButton
+          text={'View All'}
+          className={yellowButtonsHover}
+        />
+      }
     >
       <OurCoursesGrid>
         {courses.map((singleCourse, i) => (

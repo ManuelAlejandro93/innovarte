@@ -1,8 +1,11 @@
 import { AppButton, AppGeneralText } from '@/Components';
+import { yellowButtonsHover } from '@/UI';
 
 export const TestimonialSingleCard = () => {
   return (
-    <div className='rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95'>
+    <div
+      className={`rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95 hover:bg-app-blue-90`}
+    >
       <AppGeneralText
         className='italic font-bold'
         text='"Fit your coursework around your existing commiments and obligations."'
@@ -23,7 +26,10 @@ export const TestimonialSingleCard = () => {
             />
           </div>
         </div>
-        <AppButton text={'Read Full Story'}></AppButton>
+        <AppButton
+          text={'Read Full Story'}
+          className={yellowButtonsHover}
+        ></AppButton>
       </div>
     </div>
   );
