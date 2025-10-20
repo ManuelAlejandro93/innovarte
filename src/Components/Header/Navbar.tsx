@@ -1,4 +1,4 @@
-import { HambMenu } from '@/Components';
+import { HambMenu, NavbarAnchors } from '@/Components';
 import { fontsizes, imgSizes } from '@/Standars';
 
 import { InnovarteIcon } from '@/Icons';
@@ -9,37 +9,12 @@ export const Navbar = () => {
       className={`navbar grid grid-cols-2 md:grid-cols-1 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2 ${fontsizes.general}`}
     >
       <div className='section-routes flex items-center md:justify-between md:w-full'>
-        <InnovarteIcon className={`${imgSizes}`} />
-        <a
-          href='#'
-          className='bg-app-white-75 rounded-lg hidden md:block md:py-2 md:px-0 lg:py-2 lg:px-1 xl:p-4'
-        >
-          Home
-        </a>
-        <a
-          href='#'
-          className='hidden md:block md:py-2 lg:p-2 xl:p-4'
-        >
-          Courses
-        </a>
-        <a
-          href='#testimonial'
-          className='hidden md:block md:py-2 lg:p-2 xl:p-4'
-        >
-          Testimonial
-        </a>
-        <a
-          href='#'
-          className='hidden md:block md:py-2 lg:p-2 xl:p-4'
-        >
-          Pricing
-        </a>
-        <a
-          href='#'
-          className='hidden md:block md:py-2 lg:p-2 xl:p-4'
-        >
-          Contact
-        </a>
+        <InnovarteIcon className={`${imgSizes} hover:cursor-pointer`} />
+        <NavbarAnchors text='Home' />
+        <NavbarAnchors text='Our Courses' />
+        <NavbarAnchors text='Testimonial' />
+        <NavbarAnchors text='Pricing' />
+        <NavbarAnchors text='FAQ' />
       </div>
       <div className='flex justify-end md:hidden'>
         <HambMenu />
