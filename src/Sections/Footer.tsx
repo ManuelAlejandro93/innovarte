@@ -13,8 +13,6 @@ import { imgSizes } from '@/Standars';
 
 import { InnovarteIcon } from '@/Icons';
 
-import { blueHover } from '@/UI';
-
 export const Footer = () => {
   return (
     <div className='footer-container w-full grid gap-4'>
