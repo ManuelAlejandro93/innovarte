@@ -7,13 +7,16 @@ import {
 
 import { loremGeneral } from '@/Standars';
 import { yellowButtonsHover } from '@/UI';
-import { testimonials } from '@/Data';
+import {
+  testimonials,
+  testimonial_header_data as testimonial_header
+} from '@/Data';
 
 export const Testimonials = () => {
   return (
     <SingleSection
-      title={'Testimonials'}
-      subtitle={loremGeneral}
+      title={testimonial_header.title ?? 'Testimonials'}
+      subtitle={testimonial_header.description ?? loremGeneral}
       viewAllButton={
         <AppButton
           text={'View All'}
