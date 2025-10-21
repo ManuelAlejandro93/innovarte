@@ -5,17 +5,20 @@ import {
   OurCourseSingleCard
 } from '@/Components';
 import { loremGeneral } from '@/Standars';
-import { courseSectionData as courses } from '@/Data';
+import {
+  courseSectionData as courses,
+  our_courses_header_data as courses_header
+} from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const OurCourses = () => {
   return (
     <SingleSection
-      title={'Our Courses'}
-      subtitle={loremGeneral}
+      title={courses_header.title ?? 'Our Courses'}
+      subtitle={courses_header.description ?? loremGeneral}
       viewAllButton={
         <AppButton
-          text={'View All'}
+          text={'Ver Todos'}
           className={yellowButtonsHover}
         />
       }
