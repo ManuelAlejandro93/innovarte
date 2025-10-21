@@ -1,9 +1,9 @@
-import { FAQGrid, FaqSingleCard } from '@/Components';
+import { FAQGrid, FaqComponent } from '@/Components';
 
 export const FAQ = () => {
   return (
     <FAQGrid>
-      <FaqSingleCard></FaqSingleCard>
+      <FaqComponent></FaqComponent>
     </FAQGrid>
   );
 };
