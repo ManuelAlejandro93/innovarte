@@ -14,9 +14,8 @@ export const Hero = () => {
           /> */}
           <Bolt className={`w-10 md:w-16 lg:w-20 xl:w-28 text-yellow-500`} />
           <h2 className={`${fontsizes.titles} font-bold text-app-grey-15`}>
-            <span className='text-app-blue-50'>Unlock</span> Your{' '}
-            <span className='text-yellow-500 '>Creative </span>
-            Potential
+            <span className='text-app-blue-50'>Libera </span> todo tu
+            <span className='text-yellow-500 '> Potencial </span>
           </h2>
           <img
             className={`${imgSizes} rotate-90 relative bottom-4 lg:bottom-7`}
@@ -29,10 +28,12 @@ export const Hero = () => {
         <p
           className={`text-center ${fontsizes.subtitles} md:text-center text-app-grey-15`}
         >
-          with Online Desing and Development Courses
+          Con nuestros cursos de Saber 11° y 10°
         </p>
         <p className={`text-center ${fontsizes.general}`}>
-          learn from industry expert and enhace your skills
+          Aprender de los mejores{' '}
+          <span className='text-app-blue-50'>Profes Experimentados </span>en su
+          área
         </p>
       </div>
       <div
@@ -42,13 +43,13 @@ export const Hero = () => {
           href=''
           className={`bg-app-blue-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2 hover:bg-app-blue-75 hover:text-white ${blueHover}`}
         >
-          Explore
+          Ver Areas
         </a>
         <a
           href=''
           className={`rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white ${blueHover}`}
         >
-          View Pricing
+          Ver Precios
         </a>
       </div>
     </div>
