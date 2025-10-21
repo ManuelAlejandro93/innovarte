@@ -1,21 +1,22 @@
 import { FAQGrid } from '@/Components';
 import { AppButton, FAQHeader, FAQSingleQuestionCard } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
-import { FAQs } from '@/Data';
+import { FAQs, faq_header_data as faq_header } from '@/Data';
 
 export const FAQ = () => {
   return (
     <FAQGrid>
       <div className='rounded-lg p-4 pb-8 md:p-6 lg:p-8 xl:p-12'>
         <FAQHeader
-          title={'Frecuently Asked Questions'}
+          title={faq_header.title ?? 'Frecuently Asked Questions'}
           subtitle={
+            faq_header.description ??
             'Still you have any questions? Contact our team via support@innovarte.com'
           }
         />
 
         <AppButton
-          text={'See all FAQ´s'}
+          text={'Ver todas'}
           className={yellowButtonsHover}
         ></AppButton>
       </div>
