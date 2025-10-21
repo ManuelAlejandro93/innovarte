@@ -13,3 +13,4 @@ export * from './ClassTextInterface';
 export * from './IconInterface';
 export * from './GeneralTextInterface';
 export * from './FooterAnchorInterface';
+export * from './TestimonialSingleCardInterface';
