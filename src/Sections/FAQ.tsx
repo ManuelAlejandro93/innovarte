@@ -1,8 +1,7 @@
 import { FAQGrid } from '@/Components';
-
 import { AppButton, FAQHeader, FAQSingleQuestionCard } from '@/Components';
-
 import { yellowButtonsHover } from '@/UI';
+import { FAQs } from '@/Data';
 
 export const FAQ = () => {
   return (
@@ -22,9 +21,13 @@ export const FAQ = () => {
       </div>
 
       <div className='grid gap-2'>
-        <FAQSingleQuestionCard />
-        <FAQSingleQuestionCard />
-        <FAQSingleQuestionCard />
+        {FAQs.map((faq, i) => (
+          <FAQSingleQuestionCard
+            key={`${i}_${faq.question}`}
+            question={faq.question}
+            answer={faq.answer}
+          />
+        ))}
       </div>
     </FAQGrid>
   );
