@@ -48,10 +48,10 @@ export const Footer = () => {
               className='font-bold'
               text_color='text-app-blue-50'
             />
-            <FooterAnchor text='Benefits' />
-            <FooterAnchor text='Our Courses' />
-            <FooterAnchor text='Our Testimonials' />
-            <FooterAnchor text='Our FAQ' />
+            <FooterAnchor text='Beneficios' />
+            <FooterAnchor text='Nuestras Areas' />
+            <FooterAnchor text='Testimonios' />
+            <FooterAnchor text='Preguntas Frecuentes' />
           </div>
           <div>
             <AppGeneralText
