@@ -19,7 +19,7 @@ export const Testimonials = () => {
       subtitle={testimonial_header.description ?? loremGeneral}
       viewAllButton={
         <AppButton
-          text={'View All'}
+          text={'Ver todos'}
           className={yellowButtonsHover}
         />
       }
