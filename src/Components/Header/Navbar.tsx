@@ -11,10 +11,10 @@ export const Navbar = () => {
       <div className='section-routes flex items-center md:justify-between md:w-full'>
         <InnovarteIcon className={`${imgSizes} hover:cursor-pointer`} />
         <NavbarAnchors text='Home' />
-        <NavbarAnchors text='Our Courses' />
-        <NavbarAnchors text='Testimonial' />
-        <NavbarAnchors text='Pricing' />
-        <NavbarAnchors text='FAQ' />
+        <NavbarAnchors text='Nuestros Cursos' />
+        <NavbarAnchors text='Testimonios' />
+        <NavbarAnchors text='Precios' />
+        <NavbarAnchors text='Preguntas' />
       </div>
       <div className='flex justify-end md:hidden'>
         <HambMenu />
