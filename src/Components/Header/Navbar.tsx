@@ -9,7 +9,9 @@ export const Navbar = () => {
       className={`navbar grid grid-cols-2 md:grid-cols-1 py-4 md:px-5 md:py-2 lg:px-10 lg:py-2 ${fontsizes.general}`}
     >
       <div className='section-routes flex items-center md:justify-between md:w-full'>
-        <InnovarteIcon className={`${imgSizes} hover:cursor-pointer`} />
+        <InnovarteIcon
+          className={`${imgSizes} hover:cursor-pointer rounded-md`}
+        />
         <NavbarAnchors text='Home' />
         <NavbarAnchors text='Nuestras Areas' />
         <NavbarAnchors text='Testimonios' />

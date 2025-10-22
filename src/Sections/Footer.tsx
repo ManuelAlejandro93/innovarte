@@ -18,7 +18,7 @@ export const Footer = () => {
     <div className='footer-container w-full grid gap-4'>
       <div className='two-upper-div-container grid gap-4 md:flex md:flex-row md:justify-between'>
         <div className='grid gap-2'>
-          <InnovarteIcon className={`${imgSizes}`} />
+          <InnovarteIcon className={`${imgSizes} rounded-md`} />
           <div className='flex items-center'>
             <MailIcon />
             <AppGeneralText
