@@ -2,33 +2,33 @@ import { BenefitInfoInterface } from '@/Interfaces';
 
 export const BenefitInfo: BenefitInfoInterface[] = [
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: 'Clases sábados en la mañana y tarde.',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Encuentra el horario que mejor se acomode a tu agenda y registrate.'
   },
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: '3 Simulacros con retroalimentación en clase.',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Luego de cada simulacro resolveremos las dudas de ellos en clase.'
   },
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: 'Modalidad Dual',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Tendras clases presenciales y virtuales pensadas para apoyarte mejor.'
   },
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: 'Llegamos a tu Ciudad o Municipio.',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Contamos con clases presenciales y virtuales en todos los municipios del Quindío.'
   },
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: 'Excelente Planta Academica',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Todos nuestros Profes están activos en algunos de los mejores colegios del departamento.'
   },
   {
-    benefitTitle: 'Flexible Learning Schedule',
+    benefitTitle: 'Preparación Psicológica para la U.',
     benefitDescription:
-      'Fit your coursework around your existing commiments and obligations.'
+      'Te enseñamos a elegir una carrera que se adapte a tí y a tu vocación.'
   }
 ];
