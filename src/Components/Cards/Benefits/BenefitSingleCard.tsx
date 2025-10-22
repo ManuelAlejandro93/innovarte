@@ -3,14 +3,14 @@ import { Bolt as BoltIcon } from '@/Icons';
 import { BenefitInfoInterface } from '@/Interfaces';
 import { blueHover } from '@/UI';
 
-export const BenefitCard = ({
+export const BenefitSingleCard = ({
   benefitNumber,
   benefitTitle,
   benefitDescription
 }: BenefitInfoInterface & { benefitNumber: number }) => {
   return (
     <div
-      className={`bg-app-blue-95 w-full h-[340px] md:h-52 lg:h-64 xl:h-96 rounded-2xl p-10 md:p-2 lg:p-4 xl:p-8 grid grid-cols-1 space-y-2 md:space-y-2 lg:space-y-4 duration-150 hover:duration-150 hover:transition-all ${blueHover}`}
+      className={`bg-app-blue-95 w-full h-52 md:h-64 lg:h-80 xl:h-96 rounded-2xl p-10 md:p-2 lg:p-4 xl:p-8 grid grid-cols-1 space-y-2 md:space-y-2 lg:space-y-4 duration-150 hover:duration-150 hover:transition-all ${blueHover}`}
     >
       <h3
         className={`text-right ${fontsizes.titles} font-bold text-yellow-600 max-h-max`}
@@ -28,7 +28,7 @@ export const BenefitCard = ({
       </div>
 
       <div className='w-full flex justify-end max-h-max'>
-        <BoltIcon className='size-9 md:size-10 lg:size-16 lg:relative lg:bottom-12 xl:bottom-0 xl:size-16 text-app-blue-50' />
+        <BoltIcon className='size-11 lg:size-14 xl:size-20 text-app-blue-50' />
       </div>
     </div>
   );

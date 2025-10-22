@@ -1,6 +1,6 @@
 import { SingleSection, AppButton, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
-import { BenefitCard } from '@/Components';
+import { BenefitSingleCard } from '@/Components';
 import { BenefitInfo, benefit_header_data as header } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
@@ -18,12 +18,12 @@ export const Benefits = () => {
     >
       <BenefitGrid>
         {BenefitInfo.map((singleBenefit, i) => (
-          <BenefitCard
+          <BenefitSingleCard
             key={`${i + 1}_${singleBenefit.benefitTitle}`}
             benefitNumber={i + 1}
             benefitTitle={singleBenefit.benefitTitle}
             benefitDescription={singleBenefit.benefitDescription}
-          ></BenefitCard>
+          ></BenefitSingleCard>
         ))}
       </BenefitGrid>
     </SingleSection>
