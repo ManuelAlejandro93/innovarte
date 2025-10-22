@@ -43,7 +43,7 @@ export const OurCourseSingleCard = ({
         </p>
       </div>
       <AppButton
-        text={'Get it now'}
+        text={'Ver temario del Icfes'}
         className={`text-center ${yellowButtonsHover}`}
       />
       <div className='w-1/4 h-1 bg-app-blue-50 rounded-full' />
