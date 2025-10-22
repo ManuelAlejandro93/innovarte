@@ -27,6 +27,7 @@ export const FAQ = () => {
             key={`${i}_${faq.question}`}
             question={faq.question}
             answer={faq.answer}
+            isShown={faq.isShown}
           />
         ))}
       </div>
