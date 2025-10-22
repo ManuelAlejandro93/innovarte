@@ -39,7 +39,7 @@ export const TestimonialSingleCard = ({
           </div>
         </div>
         <AppButton
-          text={'Read Full Story'}
+          text={'Leer Historia Completa'}
           className={yellowButtonsHover}
         ></AppButton>
       </div>
