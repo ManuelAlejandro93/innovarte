@@ -27,11 +27,13 @@ export const OurCourses = () => {
         {courses.map((singleCourse, i) => (
           <OurCourseSingleCard
             key={`${i}_${singleCourse.url}`}
-            description={singleCourse.description}
+            img_description={singleCourse.img_description}
             url={singleCourse.url}
             area={singleCourse.area}
             intensity={singleCourse.intensity}
             teacher={singleCourse.teacher}
+            title={singleCourse.title}
+            subtitle={singleCourse.subtitle}
           />
         ))}
       </OurCoursesGrid>

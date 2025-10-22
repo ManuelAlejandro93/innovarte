@@ -5,10 +5,12 @@ import { OurCoursSingleCardInterface } from '@/Interfaces';
 
 export const OurCourseSingleCard = ({
   area,
-  description,
+  img_description: description,
   intensity,
   teacher,
-  url
+  url,
+  title,
+  subtitle
 }: OurCoursSingleCardInterface) => {
   return (
     <div className='rounded-lg  w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4 hover:bg-app-white-95'>
@@ -33,12 +35,11 @@ export const OurCourseSingleCard = ({
       </div>
       <div>
         <p className={`text-app-grey-20 font-semibold ${fontsizes.cardTitles}`}>
-          {'Flexible Learning Schedule'}
+          {title ?? 'Flexible Learning Schedule'}
         </p>
         <p className={`text-app-grey-30 ${fontsizes.general}`}>
-          {
-            'Fit your coursework around your existing commiments and obligations.'
-          }
+          {subtitle ??
+            'Fit your coursework around your existing commiments and obligations.'}
         </p>
       </div>
       <AppButton

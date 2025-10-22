@@ -8,7 +8,7 @@ export const benefit_header_data: Header_Data_Interface = {
 export const our_courses_header_data: Header_Data_Interface = {
   title: 'Nuestras Areas',
   description:
-    'Profesores expertos en sus áreas, Docentes experimentados en la enseñanza, Herramientas virtuales de vanguardia, metodología mixta que combina virtualidad y presencialidad. Clases los sábados y apoyo psicologíco y pedagogico, para elegir bien tu carrera.  '
+    'Contamos con profesionales en todas las areas, todos preparados y con experiencia docente de varios años. Cubrimos todas areas individualmente: Matemáticas, Español, Sociales, Física, Química, Biología, Ciencia Tecnología y Sociedad, y Apoyo Vocacional.'
 };
 
 export const testimonial_header_data: Header_Data_Interface = {
