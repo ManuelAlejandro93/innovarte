@@ -6,7 +6,8 @@ import { fontsizes } from '@/Standars';
 export const PricingSingleCard = ({
   className,
   paymentType,
-  finalPrice
+  finalPrice,
+  benefits
 }: PricingSingleCardInterface) => {
   return (
     <div
@@ -30,48 +31,19 @@ export const PricingSingleCard = ({
         text='Condiciones de pago'
         className='font-bold text-center uppercase text-yellow-600'
       />
-      <div className='flex justify-center items-center'>
-        <CheckIcon className='mr-2 text-green-500' />
-        <AppGeneralText
-          text='Beneficio 1'
-          className='text-center'
-        />
-      </div>
-      <div className='flex justify-center items-center'>
-        <XIcon className='mr-2 text-red-500' />
-        <AppGeneralText
-          text='Beneficio 2'
-          className='text-center'
-        />
-      </div>
-      <div className='flex justify-center items-center'>
-        <CheckIcon className='mr-2 text-green-500' />
-        <AppGeneralText
-          text='Beneficio 1'
-          className='text-center'
-        />
-      </div>
-      <div className='flex justify-center items-center'>
-        <XIcon className='mr-2 text-red-500' />
-        <AppGeneralText
-          text='Beneficio 2'
-          className='text-center'
-        />
-      </div>
-      <div className='flex justify-center items-center'>
-        <CheckIcon className='mr-2 text-green-500' />
-        <AppGeneralText
-          text='Beneficio 1'
-          className='text-center'
-        />
-      </div>
-      <div className='flex justify-center items-center'>
-        <XIcon className='mr-2 text-red-500' />
-        <AppGeneralText
-          text='Beneficio 2'
-          className='text-center'
-        />
-      </div>
+      {benefits?.map((benefit) => (
+        <div className='flex justify-center items-center'>
+          {benefit.isIncluded ? (
+            <CheckIcon className='mr-2 text-green-500' />
+          ) : (
+            <XIcon className='mr-2 text-red-500' />
+          )}
+          <AppGeneralText
+            text={benefit.name}
+            className='text-center'
+          />
+        </div>
+      ))}
     </div>
   );
 };

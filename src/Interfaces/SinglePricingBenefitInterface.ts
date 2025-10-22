@@ -1,4 +1,4 @@
 export interface SinglePricingBenefitInterface {
-  name: String;
+  name: string;
   isIncluded: boolean;
 }
