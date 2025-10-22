@@ -16,3 +16,4 @@ export * from './FooterAnchorInterface';
 export * from './TestimonialSingleCardInterface';
 export * from './FAQSingleQuestionCardInterface';
 export * from './Header_Data_Interface';
+export * from './PricingSingleCardInterface';
