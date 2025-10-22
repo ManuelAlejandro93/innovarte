@@ -4,7 +4,7 @@ import { blueHover } from '@/UI';
 
 export const Hero = () => {
   return (
-    <div className='pt-8 md:pt-16 space-y-5 md:space-y-10'>
+    <div className='pt-4 space-y-5 md:space-y-10'>
       <div className='row1'>
         <div className='flex justify-center items-center'>
           {/* <img
