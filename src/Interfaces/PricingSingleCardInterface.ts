@@ -1,12 +1,10 @@
-import { ClassNameInterface } from '@/Interfaces';
+import {
+  ClassNameInterface,
+  SinglePricingBenefitInterface
+} from '@/Interfaces';
 
 export interface PricingSingleCardInterface extends ClassNameInterface {
   paymentType?: string;
   finalPrice?: number;
-  benefits?: [
-    {
-      name: String;
-      isIncluded: boolean;
-    }
-  ];
+  benefits?: SinglePricingBenefitInterface[];
 }

@@ -1,6 +1,10 @@
 import { loremGeneral } from '@/Standars';
 import { PricingGrid, PricingSingleCard, SingleSection } from '@/Components';
-import { pricing_header_data as pricing_header } from '@/Data';
+import {
+  pricing_header_data as pricing_header,
+  CreditPricingBenefits,
+  cashPricingBenefits
+} from '@/Data';
 
 export const Pricing = () => {
   return (
@@ -9,8 +13,16 @@ export const Pricing = () => {
       subtitle={pricing_header.description ?? loremGeneral}
     >
       <PricingGrid>
-        <PricingSingleCard></PricingSingleCard>
-        <PricingSingleCard></PricingSingleCard>
+        <PricingSingleCard
+          paymentType='Contado'
+          finalPrice={300}
+          benefits={cashPricingBenefits}
+        />
+        <PricingSingleCard
+          paymentType='Crédito'
+          finalPrice={400}
+          benefits={CreditPricingBenefits}
+        />
       </PricingGrid>
     </SingleSection>
   );
