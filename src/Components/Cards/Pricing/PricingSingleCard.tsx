@@ -31,8 +31,11 @@ export const PricingSingleCard = ({
         text='Condiciones de pago'
         className='font-bold text-center uppercase text-yellow-600'
       />
-      {benefits?.map((benefit) => (
-        <div className='flex justify-center items-center'>
+      {benefits?.map((benefit, i) => (
+        <div
+          className={`flex justify-center items-center ${i}_${benefit.name}`}
+          key={`${i}_${benefit.name}`}
+        >
           {benefit.isIncluded ? (
             <CheckIcon className='mr-2 text-green-500' />
           ) : (
