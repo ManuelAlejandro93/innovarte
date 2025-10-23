@@ -2,6 +2,7 @@ import { HambMenu, NavbarAnchors } from '@/Components';
 import { fontsizes, imgSizes } from '@/Standars';
 
 import { InnovarteIcon } from '@/Icons';
+import * as navigationIds from '@/Data/NavigationIds';
 
 export const Navbar = () => {
   return (
@@ -12,11 +13,26 @@ export const Navbar = () => {
         <InnovarteIcon
           className={`${imgSizes} hover:cursor-pointer rounded-md`}
         />
-        <NavbarAnchors text='Home' />
-        <NavbarAnchors text='Nuestras Areas' />
-        <NavbarAnchors text='Testimonios' />
-        <NavbarAnchors text='Precios' />
-        <NavbarAnchors text='Preguntas' />
+        <NavbarAnchors
+          text='Home'
+          navigationID={navigationIds.homeID}
+        />
+        <NavbarAnchors
+          text='Nuestras Areas'
+          navigationID={navigationIds.coursesID}
+        />
+        <NavbarAnchors
+          text='Testimonios'
+          navigationID={navigationIds.testimonialsID}
+        />
+        <NavbarAnchors
+          text='Precios'
+          navigationID={navigationIds.pricingID}
+        />
+        <NavbarAnchors
+          text='Preguntas'
+          navigationID={navigationIds.faqID}
+        />
       </div>
       <div className='flex justify-end md:hidden'>
         <HambMenu />
