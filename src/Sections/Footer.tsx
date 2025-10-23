@@ -72,7 +72,9 @@ export const Footer = () => {
             />
 
             <div className='grid grid-cols-3 gap-2'>
-              <FacebookIcon className='hover:text-app-blue-50' />
+              <a href='#home'>
+                <FacebookIcon className='hover:text-app-blue-50' />
+              </a>
               <InstagramIcon className='hover:text-app-blue-50' />
               <WhatsappIcon className='w-8 md:w-9 hover:text-app-blue-50' />
             </div>
