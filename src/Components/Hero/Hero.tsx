@@ -1,6 +1,7 @@
 import { Bolt } from '@/Icons';
 import { fontsizes, imgSizes } from '@/Standars';
 import { blueHover } from '@/UI';
+import * as navigationIds from '@/Data/NavigationIds';
 
 export const Hero = () => {
   return (
@@ -40,13 +41,13 @@ export const Hero = () => {
         className={`row3 grid grid-cols-2 text-center md:grid md:grid-cols-2 lg:flex lg:justify-center ${fontsizes.general}`}
       >
         <a
-          href=''
+          href={`#${navigationIds.coursesID}`}
           className={`bg-app-blue-50 text-app-white-95 rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 mr-2 hover:bg-app-blue-75 hover:text-white ${blueHover}`}
         >
           Ver Areas
         </a>
         <a
-          href=''
+          href={`#${navigationIds.pricingID}`}
           className={`rounded-md p-2 md:p-2 lg:p-2 xl:py-4 xl:px-8 bg-white ${blueHover}`}
         >
           Ver Precios
