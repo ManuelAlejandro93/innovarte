@@ -10,13 +10,16 @@ import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
 import { imgSizes } from '@/Standars';
 import { InnovarteIcon } from '@/Icons';
 import * as navigationIds from '@/Data/NavigationIds';
+import { facebook, instagram } from '@/Data';
 
 export const Footer = () => {
   return (
     <div className='footer-container w-full grid gap-4'>
       <div className='two-upper-div-container grid gap-4 md:flex md:flex-row md:justify-between'>
         <div className='grid gap-2'>
-          <InnovarteIcon className={`${imgSizes} rounded-md`} />
+          <a href={navigationIds.homeID}>
+            <InnovarteIcon className={`${imgSizes} rounded-md`} />
+          </a>
           <div className='flex items-center'>
             <MailIcon />
             <AppGeneralText
@@ -72,10 +75,18 @@ export const Footer = () => {
             />
 
             <div className='grid grid-cols-3 gap-2'>
-              <a href='#home'>
+              <a
+                href={facebook}
+                target='_blank'
+              >
                 <FacebookIcon className='hover:text-app-blue-50' />
               </a>
-              <InstagramIcon className='hover:text-app-blue-50' />
+              <a
+                href={instagram}
+                target='_blank'
+              >
+                <InstagramIcon className='hover:text-app-blue-50' />
+              </a>
               <WhatsappIcon className='w-8 md:w-9 hover:text-app-blue-50' />
             </div>
           </div>

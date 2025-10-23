@@ -5,3 +5,4 @@ export * from './Faqs';
 export * from './SectionHeaderData';
 export * from './PricingBenefits';
 export * from './NavigationIds';
+export * from './SocialMedias';
