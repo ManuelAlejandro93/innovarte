@@ -1,12 +1,13 @@
 import { SingleSection, AppButton, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
 import { BenefitSingleCard } from '@/Components';
-import { BenefitInfo, benefit_header_data as header } from '@/Data';
+import { BenefitInfo, benefit_header_data as header, benefitsID } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const Benefits = () => {
   return (
     <SingleSection
+      sectionId={benefitsID}
       title={header.title}
       subtitle={header.description ?? loremGeneral}
       viewAllButton={

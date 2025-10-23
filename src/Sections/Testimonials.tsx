@@ -9,12 +9,14 @@ import { loremGeneral } from '@/Standars';
 import { yellowButtonsHover } from '@/UI';
 import {
   testimonials,
-  testimonial_header_data as testimonial_header
+  testimonial_header_data as testimonial_header,
+  testimonialsID
 } from '@/Data';
 
 export const Testimonials = () => {
   return (
     <SingleSection
+      sectionId={testimonialsID}
       title={testimonial_header.title ?? 'Testimonials'}
       subtitle={testimonial_header.description ?? loremGeneral}
       viewAllButton={

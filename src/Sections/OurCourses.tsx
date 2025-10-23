@@ -7,13 +7,15 @@ import {
 import { loremGeneral } from '@/Standars';
 import {
   courseSectionData as courses,
-  our_courses_header_data as courses_header
+  our_courses_header_data as courses_header,
+  coursesID
 } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const OurCourses = () => {
   return (
     <SingleSection
+      sectionId={coursesID}
       title={courses_header.title ?? 'Our Courses'}
       subtitle={courses_header.description ?? loremGeneral}
       viewAllButton={

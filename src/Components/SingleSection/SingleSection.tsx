@@ -5,16 +5,17 @@ export const SingleSection = ({
   children,
   title,
   subtitle,
-  viewAllButton
+  viewAllButton,
+  sectionId
 }: SingleSectionInterface) => {
   return (
-    <>
+    <div id={sectionId}>
       <SingleSectionHeader
         title={title}
         subtitle={subtitle}
         viewAllButton={viewAllButton}
       />
       {children}
-    </>
+    </div>
   );
 };

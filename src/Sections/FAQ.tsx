@@ -1,12 +1,15 @@
 import { FAQGrid } from '@/Components';
 import { AppButton, FAQHeader, FAQSingleQuestionCard } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
-import { FAQs, faq_header_data as faq_header } from '@/Data';
+import { FAQs, faq_header_data as faq_header, faqID } from '@/Data';
 
 export const FAQ = () => {
   return (
     <FAQGrid>
-      <div className='rounded-lg p-4 pb-8 md:p-6 lg:p-8 xl:p-12'>
+      <div
+        className='rounded-lg p-4 pb-8 md:p-6 lg:p-8 xl:p-12'
+        id={faqID}
+      >
         <FAQHeader
           title={faq_header.title ?? 'Frecuently Asked Questions'}
           subtitle={
