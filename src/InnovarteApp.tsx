@@ -16,11 +16,13 @@ import {
   Testimonials
 } from '@/Sections';
 
+import { homeID } from '@/Data';
+
 export const InnovarteApp = () => {
   return (
     <AppContainer>
       <GrandContainer>
-        <Header />
+        <Header id={homeID} />
         <SectionContainer>
           <SingleSectionContainer>
             <Hero></Hero>
