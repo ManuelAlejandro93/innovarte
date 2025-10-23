@@ -6,12 +6,10 @@ import {
   Instagram as InstagramIcon,
   CopyrightIcon
 } from 'lucide-react';
-
 import { AppGeneralText, FooterAnchor, WhatsappIcon } from '@/Components';
-
 import { imgSizes } from '@/Standars';
-
 import { InnovarteIcon } from '@/Icons';
+import * as navigationIds from '@/Data/NavigationIds';
 
 export const Footer = () => {
   return (
@@ -44,14 +42,27 @@ export const Footer = () => {
         <div className='flex justify-between'>
           <div className='grid gap-2'>
             <FooterAnchor
+              navigationID={navigationIds.homeID}
               text='Home'
               className='font-bold'
               text_color='text-app-blue-50'
             />
-            <FooterAnchor text='Beneficios' />
-            <FooterAnchor text='Nuestras Areas' />
-            <FooterAnchor text='Testimonios' />
-            <FooterAnchor text='Preguntas Frecuentes' />
+            <FooterAnchor
+              navigationID={navigationIds.benefitsID}
+              text='Beneficios'
+            />
+            <FooterAnchor
+              navigationID={navigationIds.coursesID}
+              text='Nuestras Areas'
+            />
+            <FooterAnchor
+              navigationID={navigationIds.testimonialsID}
+              text='Testimonios'
+            />
+            <FooterAnchor
+              navigationID={navigationIds.faqID}
+              text='Preguntas Frecuentes'
+            />
           </div>
           <div>
             <AppGeneralText
