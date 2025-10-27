@@ -18,3 +18,4 @@ export * from './FAQHeader';
 export * from './Anchors';
 export * from './Icons';
 export * from './NavbarAchors';
+export * from './IcfesNavigationButton';
