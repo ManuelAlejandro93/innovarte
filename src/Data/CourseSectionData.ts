@@ -6,7 +6,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     img_description: 'image1',
     intensity: '10 Clases',
     area: 'Ciencias Puras',
-    teacher: 'Juan Rodrígo Pérez.',
+    teacher: 'Juan Pérez.',
     title: 'Matemáticas',
     subtitle:
       'Aprende Matemática con el profe ganador del Premio Eistein de las Matemáticas.'
@@ -16,7 +16,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     img_description: 'image2',
     intensity: '4 Clases',
     area: 'Humanidades.',
-    teacher: 'Sergio Ronaldo Gómez',
+    teacher: 'Ronaldo Gómez',
     title: 'Inglés',
     subtitle: 'Aprende Inglés con el profe ganador del Premio Nobel de Inglés.'
   },
@@ -26,7 +26,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     img_description: 'image3',
     intensity: '3 Clases',
     area: 'Ciencias Básicas',
-    teacher: 'Cristian de Jesús Ibargüen',
+    teacher: 'Cristian Ibargüen',
     title: 'Química',
     subtitle:
       'Aprende Química con el profe ganador del Premio Nobel de Química.'
@@ -36,7 +36,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     img_description: 'image4',
     intensity: '3 Clases',
     area: 'Ciencias Básicas',
-    teacher: 'Manuel Leonardo Pinzón',
+    teacher: 'Manuel Pinzón',
     title: 'Física',
     subtitle: 'Aprende Física con el profe ganador del Premio Nobel de Física.'
   },
@@ -45,7 +45,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     img_description: 'image5',
     intensity: '3 Clases',
     area: 'Ciencias Básicas',
-    teacher: 'Nini Petronia Álvares',
+    teacher: 'Antonia  Álvares',
     title: 'Literatura',
     subtitle:
       'Aprende Literatura con la profe ganadora del Premio Nobel de Literatura.'
