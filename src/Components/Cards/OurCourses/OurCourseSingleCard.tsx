@@ -1,4 +1,4 @@
-import { OurCourseBadget, AppButton } from '@/Components';
+import { OurCourseBadget, IcfesNavigationButton } from '@/Components';
 import { fontsizes } from '@/Standars';
 import { yellowButtonsHover } from '@/UI';
 import { OurCoursSingleCardInterface } from '@/Interfaces';
@@ -42,7 +42,7 @@ export const OurCourseSingleCard = ({
             'Fit your coursework around your existing commiments and obligations.'}
         </p>
       </div>
-      <AppButton
+      <IcfesNavigationButton
         text={'Ver temario del Icfes'}
         className={`text-center ${yellowButtonsHover}`}
       />
