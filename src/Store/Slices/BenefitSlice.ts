@@ -1,29 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { BenefitInfo } from '@/Data';
+import { BenefitInfo as benefitTotalItems } from '@/Data';
 
-const initialState: Counter = {
-  value: 0
+const minBenefitDisplayedItemAmount: number = 6;
+const initialBenefitItemOnLayout = benefitTotalItems.slice(
+  0,
+  minBenefitDisplayedItemAmount
+);
+
+const initialState = {
+  benefitItemOnLayout: initialBenefitItemOnLayout,
+  benefitToggleButtonText: 'Ver más'
 };
 
-const counterSlice = createSlice({
-  name: 'counter-state',
+const benefitSlice = createSlice({
+  name: 'benefit-state',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value++;
-    },
-    decrement: (state) => {
-      state.value--;
-    },
-    incrementBy: (state, action: PayloadAction<number>) => {
-      return { ...state, value: state.value + action.payload };
-    },
-    decrementBy: (state, action: PayloadAction<number>) => {
-      state.value -= action.payload;
+    onClickBenefitToggleButton: (state) => {
+      if (state.benefitItemOnLayout.length === minBenefitDisplayedItemAmount) {
+        state.benefitItemOnLayout = benefitTotalItems;
+      } else {
+        state.benefitItemOnLayout = initialBenefitItemOnLayout;
+      }
     }
   }
 });
 
-export const { increment, decrement, incrementBy, decrementBy } =
-  counterSlice.actions;
-export const counterReducer = counterSlice.reducer;
+export const { onClickBenefitToggleButton: increment } = benefitSlice.actions;
+export const benefitReducer = benefitSlice.reducer;

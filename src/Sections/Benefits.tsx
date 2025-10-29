@@ -1,3 +1,6 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '@/Store';
+
 import { SingleSection, AppToggleButton, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
 import { BenefitSingleCard } from '@/Components';
@@ -5,6 +8,7 @@ import { BenefitInfo, benefit_header_data as header, benefitsID } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const Benefits = () => {
+  const count = useSelector((state: RootState) => state);
   return (
     <SingleSection
       sectionId={benefitsID}
@@ -31,3 +35,7 @@ export const Benefits = () => {
     </SingleSection>
   );
 };
+
+const dispatch = useDispatch();
+
+dispatch(decrementPokemonID());
