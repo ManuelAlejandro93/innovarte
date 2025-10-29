@@ -1,6 +1,6 @@
 import {
   SingleSection,
-  AppButton,
+  AppToggleButton,
   TestimonialGrid,
   TestimonialSingleCard
 } from '@/Components';
@@ -20,7 +20,7 @@ export const Testimonials = () => {
       title={testimonial_header.title ?? 'Testimonials'}
       subtitle={testimonial_header.description ?? loremGeneral}
       viewAllButton={
-        <AppButton
+        <AppToggleButton
           text={'Ver todos'}
           className={yellowButtonsHover}
         />

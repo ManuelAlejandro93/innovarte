@@ -1,4 +1,4 @@
-import { SingleSection, AppButton, BenefitGrid } from '@/Components';
+import { SingleSection, AppToggleButton, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
 import { BenefitSingleCard } from '@/Components';
 import { BenefitInfo, benefit_header_data as header, benefitsID } from '@/Data';
@@ -11,7 +11,7 @@ export const Benefits = () => {
       title={header.title}
       subtitle={header.description ?? loremGeneral}
       viewAllButton={
-        <AppButton
+        <AppToggleButton
           text={'Ver todos'}
           className={yellowButtonsHover}
         />

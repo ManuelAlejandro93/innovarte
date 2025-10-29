@@ -3,11 +3,11 @@ import { fontsizes } from '@/Standars';
 import { grey_15 } from '@/UI';
 import { AppButtonInterface } from '@/Interfaces';
 
-export const AppButton = ({
+export const AppToggleButton = ({
   className,
   text,
   backgroud_color
-}: AppButtonInterface): ReactNode => {
+}: AppButtonInterface) => {
   return (
     <a
       className={`${backgroud_color ? backgroud_color : 'bg-app-yellow-80'} ${

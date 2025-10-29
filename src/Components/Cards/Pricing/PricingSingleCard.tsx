@@ -1,5 +1,5 @@
 import { Check as CheckIcon, X as XIcon } from 'lucide-react';
-import { AppButton, AppGeneralText } from '@/Components';
+import { AppToggleButton, AppGeneralText } from '@/Components';
 import { PricingSingleCardInterface } from '@/Interfaces';
 import { fontsizes } from '@/Standars';
 
@@ -13,7 +13,7 @@ export const PricingSingleCard = ({
     <div
       className={`w-full h-fit grid gap-4 rounded-3xl border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12 hover:bg-app-white-95 ${className}`}
     >
-      <AppButton
+      <AppToggleButton
         text={paymentType ?? 'Contado'}
         className={`text-center hover:bg-app-blue-75 hover:text-white`}
         backgroud_color={'bg-app-blue-90'}

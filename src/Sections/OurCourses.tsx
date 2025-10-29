@@ -1,6 +1,6 @@
 import {
   SingleSection,
-  AppButton,
+  AppToggleButton,
   OurCoursesGrid,
   OurCourseSingleCard
 } from '@/Components';
@@ -19,7 +19,7 @@ export const OurCourses = () => {
       title={courses_header.title ?? 'Our Courses'}
       subtitle={courses_header.description ?? loremGeneral}
       viewAllButton={
-        <AppButton
+        <AppToggleButton
           text={'Ver Todos'}
           className={yellowButtonsHover}
         />

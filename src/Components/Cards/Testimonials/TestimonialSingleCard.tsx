@@ -1,4 +1,4 @@
-import { AppButton, AppGeneralText } from '@/Components';
+import { AppToggleButton, AppGeneralText } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
 
@@ -38,10 +38,10 @@ export const TestimonialSingleCard = ({
             />
           </div>
         </div>
-        <AppButton
+        <AppToggleButton
           text={'Leer Historia Completa'}
           className={yellowButtonsHover}
-        ></AppButton>
+        ></AppToggleButton>
       </div>
     </div>
   );

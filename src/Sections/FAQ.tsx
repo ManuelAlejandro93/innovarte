@@ -1,5 +1,9 @@
 import { FAQGrid } from '@/Components';
-import { AppButton, FAQHeader, FAQSingleQuestionCard } from '@/Components';
+import {
+  AppToggleButton,
+  FAQHeader,
+  FAQSingleQuestionCard
+} from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { FAQs, faq_header_data as faq_header, faqID } from '@/Data';
 
@@ -18,10 +22,10 @@ export const FAQ = () => {
           }
         />
 
-        <AppButton
+        <AppToggleButton
           text={'Ver todas'}
           className={yellowButtonsHover}
-        ></AppButton>
+        ></AppToggleButton>
       </div>
 
       <div className='grid gap-2'>
