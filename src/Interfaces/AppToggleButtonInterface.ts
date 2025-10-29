@@ -3,4 +3,5 @@ export interface AppToggleButtonInterface {
   text?: String;
   backgroud_color?: String;
   url?: string;
+  toogleFunction?: () => void;
 }

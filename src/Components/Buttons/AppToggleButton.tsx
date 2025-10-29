@@ -5,13 +5,21 @@ import { AppToggleButtonInterface } from '@/Interfaces';
 export const AppToggleButton = ({
   className,
   text,
-  backgroud_color
+  backgroud_color,
+  toogleFunction
 }: AppToggleButtonInterface) => {
   return (
     <a
       className={`${backgroud_color ? backgroud_color : 'bg-app-yellow-80'} ${
         fontsizes.general
       } text-${grey_15} rounded-lg p-4 md:p-2 lg:p-4 hover:cursor-pointer ${className}`}
+      onClick={() => {
+        if (!toogleFunction) {
+          console.log('Toggle funtion is null');
+        } else {
+          toogleFunction();
+        }
+      }}
     >
       {text}
     </a>

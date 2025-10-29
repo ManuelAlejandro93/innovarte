@@ -14,6 +14,7 @@ export const Benefits = () => {
         <AppToggleButton
           text={'Ver todos'}
           className={yellowButtonsHover}
+          toogleFunction={() => console.log('Vengo desde la función toogle.')}
         />
       }
     >
