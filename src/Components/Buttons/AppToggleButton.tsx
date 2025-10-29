@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { fontsizes } from '@/Standars';
 import { grey_15 } from '@/UI';
 import { AppButtonInterface } from '@/Interfaces';
