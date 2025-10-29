@@ -5,10 +5,14 @@ const initialState = {
 };
 
 export const testSlice = createSlice({
-  name: 'auth-state',
+  name: 'test-state',
   initialState,
-  reducers: {}
+  reducers: {
+    add1(state) {
+      state.state++;
+    }
+  }
 });
 
 export const testReducer = testSlice.reducer;
-export const {} = testSlice.actions;
+export const { add1 } = testSlice.actions;
