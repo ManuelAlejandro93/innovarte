@@ -1,14 +1,17 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '@/Store';
+import { RootState, onClickBenefitToggleButton } from '@/Store';
 
 import { SingleSection, AppToggleButton, BenefitGrid } from '@/Components';
 import { loremGeneral } from '@/Standars';
 import { BenefitSingleCard } from '@/Components';
-import { BenefitInfo, benefit_header_data as header, benefitsID } from '@/Data';
+import { benefit_header_data as header, benefitsID } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const Benefits = () => {
-  const count = useSelector((state: RootState) => state);
+  const { benefitItemOnLayout, benefitToggleButtonText } = useSelector(
+    (state: RootState) => state.benefitReducer
+  );
+  const dispatch = useDispatch();
   return (
     <SingleSection
       sectionId={benefitsID}
@@ -16,14 +19,14 @@ export const Benefits = () => {
       subtitle={header.description ?? loremGeneral}
       viewAllButton={
         <AppToggleButton
-          text={'Ver todos'}
+          text={benefitToggleButtonText}
           className={yellowButtonsHover}
-          toogleFunction={() => console.log('Vengo desde la función toogle.')}
+          toogleFunction={() => dispatch(onClickBenefitToggleButton())}
         />
       }
     >
       <BenefitGrid>
-        {BenefitInfo.map((singleBenefit, i) => (
+        {benefitItemOnLayout.map((singleBenefit, i) => (
           <BenefitSingleCard
             key={`${i + 1}_${singleBenefit.benefitTitle}`}
             benefitNumber={i + 1}
@@ -35,7 +38,3 @@ export const Benefits = () => {
     </SingleSection>
   );
 };
-
-const dispatch = useDispatch();
-
-dispatch(decrementPokemonID());

@@ -19,12 +19,14 @@ const benefitSlice = createSlice({
     onClickBenefitToggleButton: (state) => {
       if (state.benefitItemOnLayout.length === minBenefitDisplayedItemAmount) {
         state.benefitItemOnLayout = benefitTotalItems;
+        state.benefitToggleButtonText = 'Ver Menos';
       } else {
         state.benefitItemOnLayout = initialBenefitItemOnLayout;
+        state.benefitToggleButtonText = 'Ver Más';
       }
     }
   }
 });
 
-export const { onClickBenefitToggleButton: increment } = benefitSlice.actions;
+export const { onClickBenefitToggleButton } = benefitSlice.actions;
 export const benefitReducer = benefitSlice.reducer;
