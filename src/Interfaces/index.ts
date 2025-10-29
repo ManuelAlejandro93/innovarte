@@ -7,7 +7,7 @@ export * from './BenefitInfoInterface';
 export * from './OurCourseBadgetInterface';
 export * from './OurCoursSingleCardInterface';
 export * from './CourseSectionDataInterface';
-export * from './AppButtonInterface';
+export * from './AppToggleButtonInterface';
 export * from './Children_Class_Interface';
 export * from './ClassTextInterface';
 export * from './IconInterface';

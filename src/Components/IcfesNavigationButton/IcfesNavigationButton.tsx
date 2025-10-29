@@ -1,4 +1,4 @@
-import { AppButtonInterface as IcfesNavigationButtonInterface } from '@/Interfaces';
+import { AppToggleButtonInterface as IcfesNavigationButtonInterface } from '@/Interfaces';
 import { fontsizes } from '@/Standars';
 import { grey_15 } from '@/UI';
 

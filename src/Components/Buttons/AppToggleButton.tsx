@@ -1,12 +1,12 @@
 import { fontsizes } from '@/Standars';
 import { grey_15 } from '@/UI';
-import { AppButtonInterface } from '@/Interfaces';
+import { AppToggleButtonInterface } from '@/Interfaces';
 
 export const AppToggleButton = ({
   className,
   text,
   backgroud_color
-}: AppButtonInterface) => {
+}: AppToggleButtonInterface) => {
   return (
     <a
       className={`${backgroud_color ? backgroud_color : 'bg-app-yellow-80'} ${

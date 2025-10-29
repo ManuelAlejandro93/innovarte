@@ -1,4 +1,4 @@
-export interface AppButtonInterface {
+export interface AppToggleButtonInterface {
   className?: String;
   text?: String;
   backgroud_color?: String;
