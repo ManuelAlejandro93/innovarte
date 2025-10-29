@@ -17,44 +17,48 @@ import {
 } from '@/Sections';
 
 import { homeID } from '@/Data';
+import { StoreProvider } from '@/Store';
 
 export const InnovarteApp = () => {
   return (
-    <AppContainer>
-      <GrandContainer>
-        <Header id={homeID} />
-        <SectionContainer>
-          <SingleSectionContainer>
-            <Hero></Hero>
-          </SingleSectionContainer>
+    <StoreProvider>
+      <AppContainer>
+        <GrandContainer>
+          <Header id={homeID} />
 
-          <SingleSectionContainer>
-            <Benefits></Benefits>
-          </SingleSectionContainer>
+          <SectionContainer>
+            <SingleSectionContainer>
+              <Hero></Hero>
+            </SingleSectionContainer>
 
-          <SingleSectionContainer>
-            <OurCourses></OurCourses>
-          </SingleSectionContainer>
+            <SingleSectionContainer>
+              <Benefits></Benefits>
+            </SingleSectionContainer>
 
-          <SingleSectionContainer>
-            <Testimonials></Testimonials>
-          </SingleSectionContainer>
+            <SingleSectionContainer>
+              <OurCourses></OurCourses>
+            </SingleSectionContainer>
 
-          <SingleSectionContainer>
-            <Pricing></Pricing>
-          </SingleSectionContainer>
+            <SingleSectionContainer>
+              <Testimonials></Testimonials>
+            </SingleSectionContainer>
 
-          <SingleSectionContainer>
-            <div className='rounded-lg border-2 border-app-white-90'>
-              <FAQ></FAQ>
-            </div>
-          </SingleSectionContainer>
+            <SingleSectionContainer>
+              <Pricing></Pricing>
+            </SingleSectionContainer>
 
-          <SingleSectionContainer>
-            <Footer></Footer>
-          </SingleSectionContainer>
-        </SectionContainer>
-      </GrandContainer>
-    </AppContainer>
+            <SingleSectionContainer>
+              <div className='rounded-lg border-2 border-app-white-90'>
+                <FAQ></FAQ>
+              </div>
+            </SingleSectionContainer>
+
+            <SingleSectionContainer>
+              <Footer></Footer>
+            </SingleSectionContainer>
+          </SectionContainer>
+        </GrandContainer>
+      </AppContainer>
+    </StoreProvider>
   );
 };
