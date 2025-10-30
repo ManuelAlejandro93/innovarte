@@ -7,8 +7,8 @@ const initialCourseItemOnLayout: CourseSectionDataInterface[] =
   courseTotalItems.slice(0, minCourseDisplayedItemAmount);
 
 const initialState: CourseStateInterface = {
-  testionialItemOnLayout: initialCourseItemOnLayout,
-  testionialToggleButtonText: 'Ver Todas'
+  courseItemOnLayout: initialCourseItemOnLayout,
+  courseToggleButtonText: 'Ver Todas'
 };
 
 const CourseSlice = createSlice({
@@ -16,14 +16,12 @@ const CourseSlice = createSlice({
   initialState,
   reducers: {
     onClickCourseToggleButton: (state: CourseStateInterface) => {
-      if (
-        state.testionialItemOnLayout.length === minCourseDisplayedItemAmount
-      ) {
-        state.testionialItemOnLayout = courseTotalItems;
-        state.testionialToggleButtonText = 'Ver Menos';
+      if (state.courseItemOnLayout.length === minCourseDisplayedItemAmount) {
+        state.courseItemOnLayout = courseTotalItems;
+        state.courseToggleButtonText = 'Ver Menos';
       } else {
-        state.testionialItemOnLayout = initialCourseItemOnLayout;
-        state.testionialToggleButtonText = 'Ver Todas';
+        state.courseItemOnLayout = initialCourseItemOnLayout;
+        state.courseToggleButtonText = 'Ver Todas';
       }
     }
   }

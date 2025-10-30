@@ -1,6 +1,6 @@
 import { CourseSectionDataInterface } from '@/Interfaces';
 
 export interface CourseStateInterface {
-  testionialItemOnLayout: CourseSectionDataInterface[];
-  testionialToggleButtonText: string;
+  courseItemOnLayout: CourseSectionDataInterface[];
+  courseToggleButtonText: string;
 }

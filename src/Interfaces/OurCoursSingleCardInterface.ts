@@ -1,3 +1,3 @@
 import { CourseSectionDataInterface } from '@/Interfaces';
-export interface OurCoursSingleCardInterface
+export interface OurCourseSingleCardInterface
   extends CourseSectionDataInterface {}

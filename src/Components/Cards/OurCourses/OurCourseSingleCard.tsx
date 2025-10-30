@@ -1,7 +1,7 @@
 import { OurCourseBadget, IcfesNavigationButton } from '@/Components';
 import { fontsizes } from '@/Standars';
 import { yellowButtonsHover } from '@/UI';
-import { OurCoursSingleCardInterface } from '@/Interfaces';
+import { OurCourseSingleCardInterface } from '@/Interfaces';
 
 export const OurCourseSingleCard = ({
   area,
@@ -10,8 +10,9 @@ export const OurCourseSingleCard = ({
   teacher,
   url,
   title,
-  subtitle
-}: OurCoursSingleCardInterface) => {
+  subtitle,
+  icfes_subject_img_url
+}: OurCourseSingleCardInterface) => {
   return (
     <div className='rounded-lg  w-full h-[440px] lg:h-[560px] xl:h-[600px] p-4 md:p-6 lg:p-8 xl:p-12 grid gap-4 md:gap-6 lg:gap-4 hover:bg-app-white-95'>
       <img
@@ -45,6 +46,7 @@ export const OurCourseSingleCard = ({
       <IcfesNavigationButton
         text={'Ver temario del Icfes'}
         className={`text-center ${yellowButtonsHover}`}
+        url={icfes_subject_img_url}
       />
       <div className='w-1/4 h-1 bg-app-blue-50 rounded-full' />
     </div>

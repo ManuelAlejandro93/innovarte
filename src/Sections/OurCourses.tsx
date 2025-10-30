@@ -12,10 +12,9 @@ import { our_courses_header_data as courses_header, coursesID } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const OurCourses = () => {
-  const {
-    testionialToggleButtonText: courseToggleButtonText,
-    testionialItemOnLayout: courseItemOnLayout
-  } = useSelector((state: RootState) => state.courseReducer);
+  const { courseItemOnLayout, courseToggleButtonText } = useSelector(
+    (state: RootState) => state.courseReducer
+  );
   const dispatch = useDispatch();
 
   return (
@@ -42,6 +41,7 @@ export const OurCourses = () => {
             teacher={singleCourse.teacher}
             title={singleCourse.title}
             subtitle={singleCourse.subtitle}
+            icfes_subject_img_url={singleCourse.icfes_subject_img_url}
           />
         ))}
       </OurCoursesGrid>

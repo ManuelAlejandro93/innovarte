@@ -10,7 +10,7 @@ export const IcfesNavigationButton = ({
 }: IcfesNavigationButtonInterface) => {
   return (
     <a
-      href={`${url ?? 'https://www.icfes.gov.co/'}`}
+      href={url}
       target='_blank'
       className={`${backgroud_color ? backgroud_color : 'bg-app-yellow-80'} ${
         fontsizes.general
