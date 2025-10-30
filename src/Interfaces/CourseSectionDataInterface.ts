@@ -6,4 +6,5 @@ export interface CourseSectionDataInterface {
   teacher: string;
   title?: string;
   subtitle?: string;
+  icfes_subject_img_url?: string;
 }

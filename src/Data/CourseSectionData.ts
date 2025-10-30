@@ -62,169 +62,109 @@ export const courseSectionData: CourseSectionDataInterface[] = [
   },
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   },
 
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-
     img_description: 'image6',
-
     intensity: '3 Clases',
-
     area: 'Ciencias Básicas',
-
     teacher: 'Hector Mora',
-
     title: 'Sociales',
-
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.'
   }
