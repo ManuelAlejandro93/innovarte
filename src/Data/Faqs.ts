@@ -9,18 +9,18 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
   {
     question: '¿Las cuotas deben ser del mismo valor?',
     answer: 'Sí. Las 3 cuotas son de 150000 pesos cada una.',
-    isShown: true
+    isShown: false
   },
   {
     question: '¿Hay descuento si tengo 2 hijos estudiando?',
     answer: 'Sí. Hay un descuento del 5% en la segunda matrícula.',
-    isShown: true
+    isShown: false
   },
   {
     question: '¿Puedo llegar tarde a los simulacros?',
     answer:
       'No. El simulacro está diseñado para ser lo más real posible. Por lo que no se podrá llegar tarde.',
-    isShown: true
+    isShown: false
   },
   {
     question: '¿El curso puede pagarse a crédito?',
@@ -35,7 +35,7 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
 
     answer: 'Sí. Las 3 cuotas son de 150000 pesos cada una.',
 
-    isShown: true
+    isShown: false
   },
 
   {
@@ -43,7 +43,7 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
 
     answer: 'Sí. Hay un descuento del 5% en la segunda matrícula.',
 
-    isShown: true
+    isShown: false
   },
 
   {
@@ -52,7 +52,7 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
     answer:
       'No. El simulacro está diseñado para ser lo más real posible. Por lo que no se podrá llegar tarde.',
 
-    isShown: true
+    isShown: false
   },
   {
     question: '¿El curso puede pagarse a crédito?',
@@ -67,7 +67,7 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
 
     answer: 'Sí. Las 3 cuotas son de 150000 pesos cada una.',
 
-    isShown: true
+    isShown: false
   },
 
   {
@@ -75,7 +75,7 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
 
     answer: 'Sí. Hay un descuento del 5% en la segunda matrícula.',
 
-    isShown: true
+    isShown: false
   },
 
   {
@@ -84,6 +84,6 @@ export const FAQs: FAQSingleQuestionCardInterface[] = [
     answer:
       'No. El simulacro está diseñado para ser lo más real posible. Por lo que no se podrá llegar tarde.',
 
-    isShown: true
+    isShown: false
   }
 ];
