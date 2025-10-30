@@ -15,7 +15,7 @@ export const AppToggleButton = ({
       } text-${grey_15} rounded-lg p-4 md:p-2 lg:p-4 hover:cursor-pointer ${className}`}
       onClick={() => {
         if (!toogleFunction) {
-          console.log('Toggle funtion is null');
+          console.log('Toggle function is null');
         } else {
           toogleFunction();
         }

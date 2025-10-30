@@ -1,6 +1,7 @@
 import { AppToggleButton, AppGeneralText } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
+import { loremGeneral } from '@/Standars';
 
 export const TestimonialSingleCard = ({
   testimonial,
@@ -19,6 +20,11 @@ export const TestimonialSingleCard = ({
           'Fit your coursework around your existing commiments and obligations.'
         }" `}
       />
+      <AppGeneralText
+        className='font-extrabold'
+        text={`-${loremGeneral}-`}
+      />
+
       <div className='testimonial-botton-div-container flex justify-between items-center'>
         <div className='flex items-center'>
           <img
