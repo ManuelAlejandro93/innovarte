@@ -1,6 +1,7 @@
 import { AppToggleButton, AppGeneralText } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
+import { useState } from 'react';
 
 export const TestimonialSingleCard = ({
   testimonial,
@@ -9,6 +10,13 @@ export const TestimonialSingleCard = ({
   testimonial_user_name,
   testimonial_user_photo
 }: TestimonialSingleCardDataInterface) => {
+  const [isFullTestimonialOpen, setIsFullTestimonialOpen] =
+    useState<boolean>(false);
+
+  const onClickTestimonialToggleButton = () => {
+    setIsFullTestimonialOpen((state) => !state);
+  };
+
   return (
     <div
       className={`rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95 hover:bg-app-blue-90`}
@@ -20,10 +28,14 @@ export const TestimonialSingleCard = ({
           'Fit your coursework around your existing commiments and obligations.'
         }" `}
       />
-      <AppGeneralText
-        className='font-extrabold scale-90'
-        text={fullTestimonial}
-      />
+      {!isFullTestimonialOpen ? (
+        ''
+      ) : (
+        <AppGeneralText
+          className='font-extrabold scale-90'
+          text={fullTestimonial}
+        />
+      )}
 
       <div className='testimonial-botton-div-container flex justify-between items-center'>
         <div className='flex items-center'>
@@ -45,9 +57,14 @@ export const TestimonialSingleCard = ({
           </div>
         </div>
         <AppToggleButton
-          text={'Leer Historia Completa'}
+          text={
+            !isFullTestimonialOpen
+              ? 'Leer Historia Completa'
+              : 'Cerrar Historia'
+          }
           className={yellowButtonsHover}
-        ></AppToggleButton>
+          toogleFunction={onClickTestimonialToggleButton}
+        />
       </div>
     </div>
   );
