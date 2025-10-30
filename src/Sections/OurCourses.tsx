@@ -12,9 +12,10 @@ import { our_courses_header_data as courses_header, coursesID } from '@/Data';
 import { yellowButtonsHover } from '@/UI';
 
 export const OurCourses = () => {
-  const { courseToggleButtonText, courseItemOnLayout } = useSelector(
-    (state: RootState) => state.courseReducer
-  );
+  const {
+    testionialToggleButtonText: courseToggleButtonText,
+    testionialItemOnLayout: courseItemOnLayout
+  } = useSelector((state: RootState) => state.courseReducer);
   const dispatch = useDispatch();
 
   return (

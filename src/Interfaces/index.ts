@@ -20,3 +20,4 @@ export * from './PricingSingleCardInterface';
 export * from './SinglePricingBenefitInterface';
 export * from './BenefitStateInterface';
 export * from './CourseStateInterface';
+export * from './TestimonialStateInterface';
