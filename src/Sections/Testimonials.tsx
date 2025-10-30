@@ -42,6 +42,7 @@ export const Testimonials = () => {
             testimonial_user_name={user.testimonial_user_name}
             testimonial_user_photo={user.testimonial_user_photo}
             testimonial={user.testimonial}
+            fullTestimonial={user.fullTestimonial}
           />
         ))}
       </TestimonialGrid>

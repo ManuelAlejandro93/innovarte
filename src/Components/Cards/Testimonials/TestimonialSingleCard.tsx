@@ -1,10 +1,10 @@
 import { AppToggleButton, AppGeneralText } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
-import { loremGeneral } from '@/Standars';
 
 export const TestimonialSingleCard = ({
   testimonial,
+  fullTestimonial,
   testimonial_user_career,
   testimonial_user_name,
   testimonial_user_photo
@@ -14,15 +14,15 @@ export const TestimonialSingleCard = ({
       className={`rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95 hover:bg-app-blue-90`}
     >
       <AppGeneralText
-        className='italic font-bold'
+        className='italic'
         text={`"${
           testimonial ??
           'Fit your coursework around your existing commiments and obligations.'
         }" `}
       />
       <AppGeneralText
-        className='font-extrabold'
-        text={`-${loremGeneral}-`}
+        className='font-extrabold scale-90'
+        text={fullTestimonial}
       />
 
       <div className='testimonial-botton-div-container flex justify-between items-center'>
