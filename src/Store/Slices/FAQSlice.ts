@@ -11,7 +11,7 @@ const initialFAQItemOnLayout: FAQSingleQuestionCardInterface[] =
 
 const initialState: FAQStateInterface = {
   FAQItemOnLayout: initialFAQItemOnLayout,
-  FAQToggleButtonText: 'Ver más'
+  FAQToggleButtonText: 'Ver Todas'
 };
 
 const FAQSlice = createSlice({
@@ -24,7 +24,7 @@ const FAQSlice = createSlice({
         state.FAQToggleButtonText = 'Ver Menos';
       } else {
         state.FAQItemOnLayout = initialFAQItemOnLayout;
-        state.FAQToggleButtonText = 'Ver Más';
+        state.FAQToggleButtonText = 'Ver Todas';
       }
     }
   }

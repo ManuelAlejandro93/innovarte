@@ -11,7 +11,7 @@ const initialTestimonialItemOnLayout: TestimonialSingleCardDataInterface[] =
 
 const initialState: TestimonialStateInterface = {
   testimonialItemOnLayout: initialTestimonialItemOnLayout,
-  testimonialToggleButtonText: 'Ver más'
+  testimonialToggleButtonText: 'Ver Todos'
 };
 
 const CourseSlice = createSlice({
@@ -27,7 +27,7 @@ const CourseSlice = createSlice({
         state.testimonialToggleButtonText = 'Ver Menos';
       } else {
         state.testimonialItemOnLayout = initialTestimonialItemOnLayout;
-        state.testimonialToggleButtonText = 'Ver Más';
+        state.testimonialToggleButtonText = 'Ver Todos';
       }
     }
   }

@@ -8,7 +8,7 @@ const initialCourseItemOnLayout: CourseSectionDataInterface[] =
 
 const initialState: CourseStateInterface = {
   testionialItemOnLayout: initialCourseItemOnLayout,
-  testionialToggleButtonText: 'Ver más'
+  testionialToggleButtonText: 'Ver Todas'
 };
 
 const CourseSlice = createSlice({
@@ -23,7 +23,7 @@ const CourseSlice = createSlice({
         state.testionialToggleButtonText = 'Ver Menos';
       } else {
         state.testionialItemOnLayout = initialCourseItemOnLayout;
-        state.testionialToggleButtonText = 'Ver Más';
+        state.testionialToggleButtonText = 'Ver Todas';
       }
     }
   }

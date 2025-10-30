@@ -8,7 +8,7 @@ const initialBenefitItemOnLayout: BenefitInfoInterface[] =
 
 const initialState: BenefitStateInterface = {
   benefitItemOnLayout: initialBenefitItemOnLayout,
-  benefitToggleButtonText: 'Ver más'
+  benefitToggleButtonText: 'Ver Todos'
 };
 
 const benefitSlice = createSlice({
@@ -21,7 +21,7 @@ const benefitSlice = createSlice({
         state.benefitToggleButtonText = 'Ver Menos';
       } else {
         state.benefitItemOnLayout = initialBenefitItemOnLayout;
-        state.benefitToggleButtonText = 'Ver Más';
+        state.benefitToggleButtonText = 'Ver Todos';
       }
     }
   }
