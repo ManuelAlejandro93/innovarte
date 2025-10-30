@@ -1,31 +1,34 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { BenefitInfo as benefitTotalItems, courseSectionData } from '@/Data';
-import { BenefitInfoInterface, BenefitStateInterface } from '@/Interfaces';
+import { courseSectionData as courseTotalItems } from '@/Data';
+import { CourseStateInterface, CourseSectionDataInterface } from '@/Interfaces';
 
-const minBenefitDisplayedItemAmount: number = 6;
-const initialBenefitItemOnLayout: BenefitInfoInterface[] =
-  benefitTotalItems.slice(0, minBenefitDisplayedItemAmount);
+const minCourseDisplayedItemAmount: number = 6;
+const initialCourseItemOnLayout: CourseSectionDataInterface[] =
+  courseTotalItems.slice(0, minCourseDisplayedItemAmount);
 
-const initialState: BenefitStateInterface = {
-  benefitItemOnLayout: initialBenefitItemOnLayout,
-  benefitToggleButtonText: 'Ver más'
+const initialState: CourseStateInterface = {
+  courseItemOnLayout: initialCourseItemOnLayout,
+  courseToggleButtonText: 'Ver más'
 };
 
-const benefitSlice = createSlice({
-  name: 'benefit-state',
+const CourseSlice = createSlice({
+  name: 'course-state',
   initialState,
   reducers: {
-    onClickBenefitToggleButton: (state) => {
-      if (state.benefitItemOnLayout.length === minBenefitDisplayedItemAmount) {
-        state.benefitItemOnLayout = benefitTotalItems;
-        state.benefitToggleButtonText = 'Ver Menos';
+    onClickCourseToggleButton: (state: CourseStateInterface) => {
+      if (state.courseItemOnLayout.length === minCourseDisplayedItemAmount) {
+        state.courseItemOnLayout = courseTotalItems.slice(
+          0,
+          minCourseDisplayedItemAmount
+        );
+        state.courseToggleButtonText = 'Ver Menos';
       } else {
-        state.benefitItemOnLayout = initialBenefitItemOnLayout;
-        state.benefitToggleButtonText = 'Ver Más';
+        state.courseItemOnLayout = initialCourseItemOnLayout;
+        state.courseToggleButtonText = 'Ver Más';
       }
     }
   }
 });
 
-export const { onClickBenefitToggleButton } = benefitSlice.actions;
-export const benefitReducer = benefitSlice.reducer;
+export const { onClickCourseToggleButton } = CourseSlice.actions;
+export const courseReducer = CourseSlice.reducer;

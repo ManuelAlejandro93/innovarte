@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { benefitReducer } from '../Slices';
+import { benefitReducer, courseReducer } from '../Slices';
 
 export const store = configureStore({
-  reducer: { benefitReducer }
+  reducer: { benefitReducer, courseReducer }
 });
 
 export type RootState = ReturnType<typeof store.getState>;

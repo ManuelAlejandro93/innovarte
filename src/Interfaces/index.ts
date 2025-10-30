@@ -19,3 +19,4 @@ export * from './Header_Data_Interface';
 export * from './PricingSingleCardInterface';
 export * from './SinglePricingBenefitInterface';
 export * from './BenefitStateInterface';
+export * from './CourseStateInterface';
