@@ -1,3 +1,6 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState, onClickFAQToggleButton } from '@/Store';
+
 import { FAQGrid } from '@/Components';
 import {
   AppToggleButton,
@@ -5,9 +8,14 @@ import {
   FAQSingleQuestionCard
 } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
-import { FAQs, faq_header_data as faq_header, faqID } from '@/Data';
+import { faq_header_data as faq_header, faqID } from '@/Data';
 
 export const FAQ = () => {
+  const { FAQToggleButtonText, FAQItemOnLayout } = useSelector(
+    (state: RootState) => state.faqReducer
+  );
+  const dispatch = useDispatch();
+
   return (
     <FAQGrid>
       <div
@@ -23,13 +31,14 @@ export const FAQ = () => {
         />
 
         <AppToggleButton
-          text={'Ver todas'}
+          text={FAQToggleButtonText}
+          toogleFunction={() => dispatch(onClickFAQToggleButton())}
           className={yellowButtonsHover}
         ></AppToggleButton>
       </div>
 
       <div className='grid gap-2'>
-        {FAQs.map((faq, i) => (
+        {FAQItemOnLayout.map((faq, i) => (
           <FAQSingleQuestionCard
             key={`${i}_${faq.question}`}
             question={faq.question}

@@ -21,3 +21,4 @@ export * from './SinglePricingBenefitInterface';
 export * from './BenefitStateInterface';
 export * from './CourseStateInterface';
 export * from './TestimonialStateInterface';
+export * from './FaqStateInterface';
