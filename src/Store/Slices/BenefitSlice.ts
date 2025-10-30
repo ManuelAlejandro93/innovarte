@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { BenefitInfo as benefitTotalItems } from '@/Data';
-import { BenefitInfoInterface, SectionStateInterface } from '@/Interfaces';
+import { BenefitInfoInterface, BenefitStateInterface } from '@/Interfaces';
 
 const minBenefitDisplayedItemAmount: number = 6;
 const initialBenefitItemOnLayout: BenefitInfoInterface[] =
   benefitTotalItems.slice(0, minBenefitDisplayedItemAmount);
 
-const initialState: SectionStateInterface = {
+const initialState: BenefitStateInterface = {
   benefitItemOnLayout: initialBenefitItemOnLayout,
   benefitToggleButtonText: 'Ver más'
 };

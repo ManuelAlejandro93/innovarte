@@ -1,7 +1,6 @@
 import { BenefitInfoInterface } from '@/Interfaces';
 
-export interface SectionStateInterface {
+export interface BenefitStateInterface {
   benefitItemOnLayout: BenefitInfoInterface[];
-
   benefitToggleButtonText: string;
 }
