@@ -15,7 +15,7 @@ const benefitSlice = createSlice({
   name: 'benefit-state',
   initialState,
   reducers: {
-    onClickBenefitToggleButton: (state) => {
+    onClickBenefitToggleButton: (state: BenefitStateInterface) => {
       if (state.benefitItemOnLayout.length === minBenefitDisplayedItemAmount) {
         state.benefitItemOnLayout = benefitTotalItems;
         state.benefitToggleButtonText = 'Ver Menos';
