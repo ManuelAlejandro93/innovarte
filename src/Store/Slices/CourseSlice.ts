@@ -17,10 +17,7 @@ const CourseSlice = createSlice({
   reducers: {
     onClickCourseToggleButton: (state: CourseStateInterface) => {
       if (state.courseItemOnLayout.length === minCourseDisplayedItemAmount) {
-        state.courseItemOnLayout = courseTotalItems.slice(
-          0,
-          minCourseDisplayedItemAmount
-        );
+        state.courseItemOnLayout = courseTotalItems;
         state.courseToggleButtonText = 'Ver Menos';
       } else {
         state.courseItemOnLayout = initialCourseItemOnLayout;
