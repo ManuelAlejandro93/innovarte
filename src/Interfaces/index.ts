@@ -18,3 +18,4 @@ export * from './FAQSingleQuestionCardInterface';
 export * from './Header_Data_Interface';
 export * from './PricingSingleCardInterface';
 export * from './SinglePricingBenefitInterface';
+export * from './SectionStateInterface';
