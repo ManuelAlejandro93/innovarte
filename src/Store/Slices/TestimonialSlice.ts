@@ -10,8 +10,8 @@ const initialTestimonialItemOnLayout: TestimonialSingleCardDataInterface[] =
   testimonialTotalData.slice(0, minTestimonialDisplayedItemAmount);
 
 const initialState: TestimonialStateInterface = {
-  testionialItemOnLayout: initialTestimonialItemOnLayout,
-  testionialToggleButtonText: 'Ver más'
+  testimonialItemOnLayout: initialTestimonialItemOnLayout,
+  testimonialToggleButtonText: 'Ver más'
 };
 
 const CourseSlice = createSlice({
@@ -20,14 +20,14 @@ const CourseSlice = createSlice({
   reducers: {
     onClickTestimonialToggleButton: (state: TestimonialStateInterface) => {
       if (
-        state.testionialItemOnLayout.length ===
+        state.testimonialItemOnLayout.length ===
         minTestimonialDisplayedItemAmount
       ) {
-        state.testionialItemOnLayout = testimonialTotalData;
-        state.testionialToggleButtonText = 'Ver Menos';
+        state.testimonialItemOnLayout = testimonialTotalData;
+        state.testimonialToggleButtonText = 'Ver Menos';
       } else {
-        state.testionialItemOnLayout = initialTestimonialItemOnLayout;
-        state.testionialToggleButtonText = 'Ver Más';
+        state.testimonialItemOnLayout = initialTestimonialItemOnLayout;
+        state.testimonialToggleButtonText = 'Ver Más';
       }
     }
   }

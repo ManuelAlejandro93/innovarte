@@ -1,3 +1,6 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState, onClickTestimonialToggleButton } from '@/Store';
+
 import {
   SingleSection,
   AppToggleButton,
@@ -8,12 +11,16 @@ import {
 import { loremGeneral } from '@/Standars';
 import { yellowButtonsHover } from '@/UI';
 import {
-  testimonials,
   testimonial_header_data as testimonial_header,
   testimonialsID
 } from '@/Data';
 
 export const Testimonials = () => {
+  const { testimonialItemOnLayout, testimonialToggleButtonText } = useSelector(
+    (state: RootState) => state.testimonialReducer
+  );
+  const dispatch = useDispatch();
+
   return (
     <SingleSection
       sectionId={testimonialsID}
@@ -21,13 +28,14 @@ export const Testimonials = () => {
       subtitle={testimonial_header.description ?? loremGeneral}
       viewAllButton={
         <AppToggleButton
-          text={'Ver todos'}
+          text={testimonialToggleButtonText}
           className={yellowButtonsHover}
+          toogleFunction={() => dispatch(onClickTestimonialToggleButton())}
         />
       }
     >
       <TestimonialGrid>
-        {testimonials.map((user, i) => (
+        {testimonialItemOnLayout.map((user, i) => (
           <TestimonialSingleCard
             key={`${i}_${user.testimonial_user_photo}`}
             testimonial_user_career={user.testimonial_user_career}
