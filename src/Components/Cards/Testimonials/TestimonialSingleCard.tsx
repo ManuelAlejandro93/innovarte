@@ -32,7 +32,7 @@ export const TestimonialSingleCard = ({
         ''
       ) : (
         <AppGeneralText
-          className='font-extrabold scale-90'
+          className='font-extrabold scale-90 animate-fade-down'
           text={fullTestimonial}
         />
       )}
