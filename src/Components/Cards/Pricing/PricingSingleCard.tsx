@@ -15,7 +15,7 @@ export const PricingSingleCard = ({
     >
       <AppToggleButton
         text={paymentType ?? 'Contado'}
-        className={`text-center hover:bg-app-blue-75 hover:text-white`}
+        className={`text-center hover:bg-app-blue-75 hover:text-white hover:cursor-default`}
         backgroud_color={'bg-app-blue-90'}
       />
 
