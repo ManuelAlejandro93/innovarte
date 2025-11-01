@@ -1,6 +1,5 @@
 import { fontsizes } from '@/Standars';
 import { GeneralTextInterface } from '@/Interfaces';
-import { useEffect } from 'react';
 
 export const AppGeneralText = ({
   className,

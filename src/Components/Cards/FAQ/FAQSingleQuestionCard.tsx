@@ -25,18 +25,19 @@ export const FAQSingleQuestionCard = ({
         />
         {!isAnswerDisplayed ? (
           <PlusIcon
-            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white ${blueHover}`}
+            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-100 ${blueHover}`}
             onClick={() => onClickOnToggle()}
           />
         ) : (
           <XIcon
             onClick={() => onClickOnToggle()}
-            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white ${blueHover}`}
+            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-100 ${blueHover}`}
           />
         )}
       </div>
       {isAnswerDisplayed ? (
         <AppGeneralText
+          className='animate-fade-down'
           text={`${
             answer ??
             'Absolutly, you can enroll in multiple courses simultaneously and acces them at your convenience.'
