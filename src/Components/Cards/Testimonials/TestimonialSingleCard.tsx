@@ -57,11 +57,7 @@ export const TestimonialSingleCard = ({
           </div>
         </div>
         <AppToggleButton
-          text={
-            !isFullTestimonialOpen
-              ? 'Leer Historia Completa'
-              : 'Cerrar Historia'
-          }
+          text={!isFullTestimonialOpen ? 'Leer Completa' : 'Cerrar Historia'}
           className={yellowButtonsHover}
           toogleFunction={onClickTestimonialToggleButton}
         />
