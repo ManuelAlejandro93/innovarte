@@ -21,7 +21,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     teacher: 'Ronaldo Gómez',
     title: 'Inglés',
     subtitle: 'Aprende Inglés con el profe ganador del Premio Nobel de Inglés.',
-    icfes_subject_img_url: icfesLinks.math
+    icfes_subject_img_url: icfesLinks.english
   },
 
   {
@@ -33,7 +33,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     title: 'Química',
     subtitle:
       'Aprende Química con el profe ganador del Premio Nobel de Química.',
-    icfes_subject_img_url: icfesLinks.math
+    icfes_subject_img_url: icfesLinks.natureSciences
   },
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image4_xok2e3.png',
@@ -43,7 +43,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     teacher: 'Manuel Pinzón',
     title: 'Física',
     subtitle: 'Aprende Física con el profe ganador del Premio Nobel de Física.',
-    icfes_subject_img_url: icfesLinks.math
+    icfes_subject_img_url: icfesLinks.natureSciences
   },
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image5_n3xnei.png',
@@ -54,7 +54,7 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     title: 'Literatura',
     subtitle:
       'Aprende Literatura con la profe ganadora del Premio Nobel de Literatura.',
-    icfes_subject_img_url: icfesLinks.math
+    icfes_subject_img_url: icfesLinks.criticReading
   },
   {
     url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
@@ -65,124 +65,6 @@ export const courseSectionData: CourseSectionDataInterface[] = [
     title: 'Sociales',
     subtitle:
       'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
-  },
-
-  {
-    url: 'https://res.cloudinary.com/dkr08foul/image/upload/v1759511892/Image6_rnyapc.png',
-    img_description: 'image6',
-    intensity: '3 Clases',
-    area: 'Ciencias Básicas',
-    teacher: 'Hector Mora',
-    title: 'Sociales',
-    subtitle:
-      'Aprende Sociales con el profe ganador del Premio Nobel de Sociales.',
-    icfes_subject_img_url: icfesLinks.math
+    icfes_subject_img_url: icfesLinks.socialScience
   }
 ];
