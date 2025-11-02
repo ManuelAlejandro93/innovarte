@@ -4,7 +4,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Lenguas Modernas.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Lenguas Modernas',
     testimonial_user_name: 'Sarah Carmona',
     testimonial_user_photo:
@@ -13,7 +14,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Medicina.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Medicina',
     testimonial_user_name: 'Luciana Bedoya',
     testimonial_user_photo:
@@ -22,7 +24,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Ingeniería Civil.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Ingeniería Civil',
     testimonial_user_name: 'Valentina Gómez',
     testimonial_user_photo:
@@ -31,7 +34,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Química.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Química',
     testimonial_user_name: 'Sarah Carmona',
     testimonial_user_photo:
@@ -40,7 +44,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Lenguas Modernas.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Lenguas Modernas',
     testimonial_user_name: 'Sarah Carmona',
     testimonial_user_photo:
@@ -50,7 +55,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Medicina.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Medicina',
     testimonial_user_name: 'Luciana Bedoya',
     testimonial_user_photo:
@@ -60,7 +66,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Ingeniería Civil.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Ingeniería Civil',
     testimonial_user_name: 'Valentina Gómez',
     testimonial_user_photo:
@@ -70,7 +77,8 @@ export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
       'Gracias al Preicfes Innovarte pude entrar a estudiar Química.',
-    fullTestimonial: loremGeneral,
+    fullTestimonial:
+      'Yo fui estudiante de programa preuniversitario de la Fundación Innovarte. Obtuve un buen puntaje y ahora me preparo para ser el profesional que siempre quise ser.',
     testimonial_user_career: 'Química',
     testimonial_user_name: 'Sarah Carmona',
     testimonial_user_photo:

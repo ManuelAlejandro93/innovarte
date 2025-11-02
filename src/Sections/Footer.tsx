@@ -87,7 +87,12 @@ export const Footer = () => {
               >
                 <InstagramIcon className='hover:text-app-blue-50' />
               </a>
-              <WhatsappIcon className='w-8 md:w-9 hover:text-app-blue-50' />
+              <a
+                href='https://wa.me/573143415131?text=Hola,%20quisiera%20por%20favor%20que%20me%20brindaran%20información%20sobre%20el%20preicfes.'
+                target='_blank'
+              >
+                <WhatsappIcon className='w-8 md:w-9 hover:text-app-blue-50' />
+              </a>
             </div>
           </div>
         </div>

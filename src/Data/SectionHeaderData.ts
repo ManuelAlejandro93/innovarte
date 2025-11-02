@@ -15,7 +15,7 @@ export const testimonial_header_data: Header_Data_Interface = {
   title: 'Testimonios',
 
   description:
-    'Los siguientes son testimonios reales de Jóvenes reales como tú, que se prepararon con nosotros y ahora viven el sueño de estudiar la carrera que amaban.'
+    'Los siguientes son testimonios reales de jóvenes reales como tú, que se prepararon con nosotros y ahora viven el sueño de estudiar la carrera que aman.'
 };
 
 export const pricing_header_data: Header_Data_Interface = {
