@@ -1,7 +1,7 @@
 import { AppToggleButton, AppGeneralText } from '@/Components';
 import { yellowButtonsHover } from '@/UI';
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
-import { useState } from 'react';
+import { useGetInGetOutUIEffect } from '@/Hooks';
 
 export const TestimonialSingleCard = ({
   testimonial,
@@ -10,13 +10,11 @@ export const TestimonialSingleCard = ({
   testimonial_user_name,
   testimonial_user_photo
 }: TestimonialSingleCardDataInterface) => {
-  const [isFullTestimonialOpen, setIsFullTestimonialOpen] =
-    useState<boolean>(false);
-
-  const onClickTestimonialToggleButton = () => {
-    setIsFullTestimonialOpen((state) => !state);
-  };
-
+  const {
+    uiEffectDynamicClass,
+    renderingFullTestimonialToggle,
+    onClickOrderForEffectToggle
+  } = useGetInGetOutUIEffect();
   return (
     <div
       className={`rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95 hover:bg-app-blue-90`}
@@ -28,13 +26,13 @@ export const TestimonialSingleCard = ({
           'Fit your coursework around your existing commiments and obligations.'
         }" `}
       />
-      {!isFullTestimonialOpen ? (
-        ''
-      ) : (
+      {renderingFullTestimonialToggle ? (
         <AppGeneralText
-          className={`font-extrabold scale-90`}
+          className={`font-extrabold scale-90 ${uiEffectDynamicClass}`}
           text={fullTestimonial}
         />
+      ) : (
+        ''
       )}
 
       <div className='testimonial-botton-div-container flex justify-between items-center'>
@@ -57,9 +55,11 @@ export const TestimonialSingleCard = ({
           </div>
         </div>
         <AppToggleButton
-          text={!isFullTestimonialOpen ? 'Leer Completa' : 'Cerrar Historia'}
+          text={
+            renderingFullTestimonialToggle ? 'Cerrar Historia' : 'Leer Completa'
+          }
           className={yellowButtonsHover}
-          toogleFunction={onClickTestimonialToggleButton}
+          toogleFunction={onClickOrderForEffectToggle}
         />
       </div>
     </div>
