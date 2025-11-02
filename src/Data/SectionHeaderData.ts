@@ -22,7 +22,7 @@ export const pricing_header_data: Header_Data_Interface = {
   title: 'Precios',
 
   description:
-    'Profesores expertos en sus áreas, Docentes experimentados en la enseñanza, Herramientas virtuales de vanguardia, metodología mixta que combina virtualidad y presencialidad. Clases los sábados y apoyo psicologíco y pedagogico, para elegir bien tu carrera.  '
+    'Nuestra Fundación cuenta con multiples formas de pago: Efectivo, Nequi, tu plata a la mano, transferencias desde y hacia todos los bancos y neo-bancos. Además contamos con un sistema de crédito. Pregunta por la forma que más se acomode a tí.'
 };
 
 export const faq_header_data: Header_Data_Interface = {

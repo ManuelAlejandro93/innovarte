@@ -1,5 +1,4 @@
 import { TestimonialSingleCardDataInterface } from '@/Interfaces';
-import { loremGeneral } from '@/Standars';
 export const testimonials: TestimonialSingleCardDataInterface[] = [
   {
     testimonial:
