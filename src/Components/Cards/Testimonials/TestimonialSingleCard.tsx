@@ -13,6 +13,7 @@ export const TestimonialSingleCard = ({
   const {
     uiEffectDynamicClass,
     renderingFullTestimonialToggle,
+    orderForEffectToggle,
     onClickOrderForEffectToggle
   } = useGetInGetOutUIEffect();
   return (
@@ -55,9 +56,7 @@ export const TestimonialSingleCard = ({
           </div>
         </div>
         <AppToggleButton
-          text={
-            renderingFullTestimonialToggle ? 'Cerrar Historia' : 'Leer Completa'
-          }
+          text={orderForEffectToggle ? 'Cerrar Historia' : 'Leer Completa'}
           className={yellowButtonsHover}
           toogleFunction={onClickOrderForEffectToggle}
         />

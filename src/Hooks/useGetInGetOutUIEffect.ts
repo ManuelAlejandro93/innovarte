@@ -11,13 +11,14 @@ export const useGetInGetOutUIEffect = () => {
 
   useEffect(() => {
     if (orderForEffectToggle) {
-      setUiEffectDynamicClass('fade-donw');
-      setRenderingFullTestimonialToggle((state) => !state);
+      setUiEffectDynamicClass('animate-fade-down');
+      setRenderingFullTestimonialToggle(true);
     } else {
-      setUiEffectDynamicClass('jump-out');
-      const timer = setTimeout(() => {}, 5000);
-      setRenderingFullTestimonialToggle((state) => !state);
-      clearTimeout(timer);
+      setUiEffectDynamicClass('animate-jump-out');
+      const customTimeOutTimer = setTimeout(() => {
+        setRenderingFullTestimonialToggle(false);
+      }, 500);
+      return () => clearTimeout(customTimeOutTimer);
     }
   }, [orderForEffectToggle]);
 
@@ -28,6 +29,7 @@ export const useGetInGetOutUIEffect = () => {
   return {
     uiEffectDynamicClass,
     renderingFullTestimonialToggle,
+    orderForEffectToggle,
     onClickOrderForEffectToggle
   };
 };

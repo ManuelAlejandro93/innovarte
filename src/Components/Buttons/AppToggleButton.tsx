@@ -9,7 +9,7 @@ export const AppToggleButton = ({
   toogleFunction
 }: AppToggleButtonInterface) => {
   return (
-    <a
+    <button
       className={`${backgroud_color ? backgroud_color : 'bg-app-yellow-80'} ${
         fontsizes.general
       } text-${grey_15} rounded-lg p-4 md:p-2 lg:p-4 hover:cursor-pointer ${className}`}
@@ -22,6 +22,6 @@ export const AppToggleButton = ({
       }}
     >
       {text}
-    </a>
+    </button>
   );
 };
