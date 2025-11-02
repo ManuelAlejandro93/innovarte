@@ -2,20 +2,18 @@ import { AppGeneralText } from '@/Components';
 import { PlusIcon, XIcon } from 'lucide-react';
 import { blueHover } from '@/UI';
 import { FAQSingleQuestionCardInterface } from '@/Interfaces';
-import { useState } from 'react';
+import { useGetInGetOutUIEffect } from '@/Hooks';
 
 export const FAQSingleQuestionCard = ({
   question,
-  answer,
-  isShown
+  answer
 }: FAQSingleQuestionCardInterface) => {
-  const [isAnswerDisplayed, setIsAnswerDisplayed] = useState<boolean>(
-    isShown as boolean
-  );
+  const {
+    uiEffectDynamicClass,
+    renderingFullTestimonialToggle,
+    onClickOrderForEffectToggle
+  } = useGetInGetOutUIEffect();
 
-  const onClickOnToggle = () => {
-    setIsAnswerDisplayed((state) => !state);
-  };
   return (
     <div className='w-full h-fit grid gap-4 rounded-lg border-2 border-app-white-90 p-4 md:p-6 lg:p-8 xl:p-12 hover:bg-app-white-95'>
       <div className='flex justify-between items-center'>
@@ -23,21 +21,21 @@ export const FAQSingleQuestionCard = ({
           text={`${question ?? 'Can I enrolle in multiple courses at once?'}`}
           className='font-bold'
         />
-        {!isAnswerDisplayed ? (
+        {!renderingFullTestimonialToggle ? (
           <PlusIcon
-            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-100 ${blueHover}`}
-            onClick={() => onClickOnToggle()}
+            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-300 ${blueHover}`}
+            onClick={() => onClickOrderForEffectToggle()}
           />
         ) : (
           <XIcon
-            onClick={() => onClickOnToggle()}
-            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-100 ${blueHover}`}
+            onClick={() => onClickOrderForEffectToggle()}
+            className={`bg-app-blue-70 p-1 rounded-md md:size-8 lg:size-10 text-white animate-spin animate-once animate-duration-300 ${blueHover}`}
           />
         )}
       </div>
-      {isAnswerDisplayed ? (
+      {renderingFullTestimonialToggle ? (
         <AppGeneralText
-          className='animate-fade-down'
+          className={`${uiEffectDynamicClass}`}
           text={`${
             answer ??
             'Absolutly, you can enroll in multiple courses simultaneously and acces them at your convenience.'
