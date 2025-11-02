@@ -28,10 +28,12 @@ export const TestimonialSingleCard = ({
         }" `}
       />
       {renderingFullTestimonialToggle ? (
-        <AppGeneralText
-          className={`font-extrabold scale-90 ${uiEffectDynamicClass}`}
-          text={fullTestimonial}
-        />
+        <div className='scale-90'>
+          <AppGeneralText
+            className={`font-extrabold ${uiEffectDynamicClass}`}
+            text={fullTestimonial}
+          />
+        </div>
       ) : (
         ''
       )}
