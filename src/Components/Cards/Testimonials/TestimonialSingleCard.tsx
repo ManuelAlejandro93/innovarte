@@ -18,7 +18,7 @@ export const TestimonialSingleCard = ({
   } = useGetInGetOutUIEffect();
   return (
     <div
-      className={`rounded-lg border-2 border-app-white-90 w-full h-[200px] md:h-[230px] lg:h-[280px] xl:h-[360px] p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-around bg-app-blue-95 hover:bg-app-blue-90`}
+      className={`rounded-lg border-2 border-app-white-90 w-full grid space-y-6 p-4 md:p-6 lg:p-8 xl:p-12  bg-app-blue-95 hover:bg-app-blue-90`}
     >
       <AppGeneralText
         className='italic'
@@ -28,11 +28,12 @@ export const TestimonialSingleCard = ({
         }" `}
       />
       {renderingFullTestimonialToggle ? (
-        <div className='scale-90'>
+        <div className='scale-95'>
           <AppGeneralText
-            className={`font-extrabold ${uiEffectDynamicClass}`}
+            className={`font-extrabold ${uiEffectDynamicClass} text-justify`}
             text={fullTestimonial}
           />
+          <div />
         </div>
       ) : (
         ''
