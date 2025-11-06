@@ -10,7 +10,7 @@ export const BenefitSingleCard = ({
 }: BenefitInfoInterface & { benefitNumber: number }) => {
   return (
     <div
-      className={`bg-app-blue-95 w-full h-52 md:h-64 lg:h-80 xl:h-96 rounded-2xl p-10 md:p-2 lg:p-4 xl:p-8 grid grid-cols-1 space-y-2 md:space-y-2 lg:space-y-4 duration-150 hover:duration-150 hover:transition-all ${blueHover}`}
+      className={`bg-app-blue-95 w-full h-52 md:h-64 lg:h-80 xl:h-96 rounded-2xl p-8 md:p-5 lg:p-8 xl:p-12 flex flex-col justify-between duration-150 hover:duration-150 hover:transition-all ${blueHover}`}
     >
       <h3
         className={`text-right ${fontsizes.titles} font-bold text-yellow-600 max-h-max`}
@@ -28,7 +28,7 @@ export const BenefitSingleCard = ({
       </div>
 
       <div className='w-full flex justify-end max-h-max'>
-        <BoltIcon className='size-11 lg:size-14 xl:size-20 text-app-blue-50' />
+        <BoltIcon className='size-8 lg:size-10 xl:size-14 text-app-blue-50' />
       </div>
     </div>
   );
