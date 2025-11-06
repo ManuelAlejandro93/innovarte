@@ -15,7 +15,9 @@ export const SingleSectionHeader = ({
         {title ?? loremTitle}
       </h2>
       <div className='grid space-y-4 md:flex md:flex-row md:justify-between'>
-        <h3 className={`${fontsizes.general} text-app-grey-30 w-2/3`}>
+        <h3
+          className={`${fontsizes.general} text-app-grey-30 text-justify md:w-2/3 md:text-left`}
+        >
           {subtitle ?? loremGeneral}
         </h3>
         {viewAllButton ? (
