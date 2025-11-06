@@ -1,6 +1,6 @@
-const titles = `text-2xl md:text-3xl lg:text-5xl`;
+const titles = `text-lg md:text-3xl lg:text-5xl`;
 
-const subtitles = 'text-sm md:text-2xl lg:text-4xl';
+const subtitles = 'text-xs md:text-2xl lg:text-4xl';
 
 const cardTitles = 'text-md md:text-xl lg:text-2xl';
 

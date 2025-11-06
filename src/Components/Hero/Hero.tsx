@@ -5,7 +5,7 @@ import * as navigationIds from '@/Data/NavigationIds';
 
 export const Hero = () => {
   return (
-    <div className='pt-4 space-y-5 md:space-y-10'>
+    <div className='space-y-4'>
       <div className='row1'>
         <div className='flex justify-center items-center'>
           {/* <img
@@ -14,12 +14,14 @@ export const Hero = () => {
             alt='logo-image'
           /> */}
           <Bolt className={`w-10 md:w-16 lg:w-20 xl:w-28 text-yellow-500`} />
-          <h2 className={`${fontsizes.titles} font-bold text-app-grey-15`}>
+          <h2
+            className={`${fontsizes.titles} font-bold text-app-grey-15  sm:text-center`}
+          >
             <span className='text-app-blue-50'>Libera </span> todo tu
             <span className='text-yellow-500 '> Potencial </span>
           </h2>
           <img
-            className={`${imgSizes} rotate-90 relative bottom-4 lg:bottom-7`}
+            className={`${imgSizes} rotate-90 relative bottom-4 lg:bottom-7 hidden md:block`}
             src='/Icons/abstract-lines.png'
             alt='logo-image'
           />
