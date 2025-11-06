@@ -1,10 +1,31 @@
+import { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
-import { useState } from 'react';
 
-const options = ['Home', 'Courses', 'About Us', 'Pricing', 'Contact'];
+import * as navigationIds from '@/Data/NavigationIds';
+
+const menuOptions = [
+  {
+    name: 'Beneficios',
+    url: navigationIds.benefitsID
+  },
+  {
+    name: 'Nuestras Áreas',
+    url: navigationIds.coursesID
+  },
+
+  {
+    name: 'Testimonios',
+    url: navigationIds.testimonialsID
+  },
+  {
+    name: 'Precios',
+    url: navigationIds.pricingID
+  },
+  { name: 'Preguntas Frecuentes', url: navigationIds.faqID }
+];
 
 const ITEM_HEIGHT = 48;
 
@@ -47,13 +68,13 @@ export const HambMenu = () => {
           }
         }}
       >
-        {options.map((option) => (
+        {menuOptions.map((option, i) => (
           <MenuItem
-            key={option}
-            selected={option === 'Pyxis'}
+            key={`${option.url}_${i}`}
+            selected={false}
             onClick={handleClose}
           >
-            {option}
+            <a href={`#${option.url}`}>{option.name}</a>
           </MenuItem>
         ))}
       </Menu>
